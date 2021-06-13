@@ -1,4 +1,347 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "Power Extender"
+Date "2021-06-11"
+Rev "1"
+Comp "Christoph Honal"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4200 2900 650  450 
+U 60C36AE5
+F0 "Relay-A" 50
+F1 "relay.sch" 50
+F2 "TRIGGER" I L 4200 3050 50 
+F3 "VIOUT" O L 4200 3200 50 
+$EndSheet
+$Sheet
+S 5000 2900 650  450 
+U 60CBD6BF
+F0 "Relay-B" 50
+F1 "relay.sch" 50
+F2 "TRIGGER" I L 5000 3050 50 
+F3 "VIOUT" O L 5000 3200 50 
+$EndSheet
+$Sheet
+S 5800 2900 650  450 
+U 60CBD77D
+F0 "Relay-C" 50
+F1 "relay.sch" 50
+F2 "TRIGGER" I L 5800 3050 50 
+F3 "VIOUT" O L 5800 3200 50 
+$EndSheet
+$Sheet
+S 6600 2900 650  450 
+U 60CBD7BB
+F0 "Relay-D" 50
+F1 "relay.sch" 50
+F2 "TRIGGER" I L 6600 3050 50 
+F3 "VIOUT" O L 6600 3200 50 
+$EndSheet
+$Comp
+L Analog_ADC:ADS1115IDGS U9
+U 1 1 60CC7499
+P 5600 4300
+F 0 "U9" V 5150 4500 50  0000 C CNN
+F 1 "ADS1115IDGS" V 5250 4700 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 5600 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 5550 3400 50  0001 C CNN
+	1    5600 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3900 5400 3650
+Wire Wire Line
+	5500 3900 5500 3500
+Wire Wire Line
+	5500 3500 4950 3500
+Wire Wire Line
+	4950 3500 4950 3200
+Wire Wire Line
+	4950 3200 5000 3200
+Wire Wire Line
+	5600 3900 5600 3500
+Wire Wire Line
+	5600 3500 5750 3500
+Wire Wire Line
+	5750 3500 5750 3200
+Wire Wire Line
+	5750 3200 5800 3200
+Wire Wire Line
+	5700 3900 5700 3650
+Wire Wire Line
+	5700 3650 6550 3650
+Wire Wire Line
+	6550 3650 6550 3200
+Wire Wire Line
+	6550 3200 6600 3200
+Wire Wire Line
+	5400 3650 4150 3650
+Wire Wire Line
+	4150 3650 4150 3200
+Wire Wire Line
+	4150 3200 4200 3200
+$Comp
+L Device:C C9
+U 1 1 60CF84D2
+P 6200 4450
+F 0 "C9" H 6315 4496 50  0000 L CNN
+F 1 "100N" H 6315 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6238 4300 50  0001 C CNN
+F 3 "~" H 6200 4450 50  0001 C CNN
+	1    6200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 60CFA5A3
+P 6200 4300
+F 0 "#PWR0101" H 6200 4150 50  0001 C CNN
+F 1 "VCC" H 6215 4473 50  0000 C CNN
+F 2 "" H 6200 4300 50  0001 C CNN
+F 3 "" H 6200 4300 50  0001 C CNN
+	1    6200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60CFB3E8
+P 6200 4650
+F 0 "#PWR0102" H 6200 4400 50  0001 C CNN
+F 1 "GND" H 6205 4477 50  0000 C CNN
+F 2 "" H 6200 4650 50  0001 C CNN
+F 3 "" H 6200 4650 50  0001 C CNN
+	1    6200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60CFB7FE
+P 5200 4700
+F 0 "#PWR0103" H 5200 4450 50  0001 C CNN
+F 1 "GND" H 5205 4527 50  0000 C CNN
+F 2 "" H 5200 4700 50  0001 C CNN
+F 3 "" H 5200 4700 50  0001 C CNN
+	1    5200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4600 6200 4650
+Wire Wire Line
+	6100 4300 6200 4300
+Connection ~ 6200 4300
+NoConn ~ 5800 4700
+Wire Wire Line
+	5200 4300 5200 4700
+Wire Wire Line
+	5400 4700 5200 4700
+Connection ~ 5200 4700
+$Comp
+L Analog_ADC:ADS1115IDGS U10
+U 1 1 60D01635
+P 7800 4300
+F 0 "U10" V 7350 4600 50  0000 C CNN
+F 1 "ADS1115IDGS" V 7450 4750 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 7800 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 7750 3400 50  0001 C CNN
+	1    7800 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 60D016BD
+P 8400 4450
+F 0 "C10" H 8515 4496 50  0000 L CNN
+F 1 "100N" H 8515 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 8438 4300 50  0001 C CNN
+F 3 "~" H 8400 4450 50  0001 C CNN
+	1    8400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR013
+U 1 1 60D016C7
+P 8400 4300
+F 0 "#PWR013" H 8400 4150 50  0001 C CNN
+F 1 "VCC" H 8415 4473 50  0000 C CNN
+F 2 "" H 8400 4300 50  0001 C CNN
+F 3 "" H 8400 4300 50  0001 C CNN
+	1    8400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 60D016D1
+P 8400 4650
+F 0 "#PWR014" H 8400 4400 50  0001 C CNN
+F 1 "GND" H 8405 4477 50  0000 C CNN
+F 2 "" H 8400 4650 50  0001 C CNN
+F 3 "" H 8400 4650 50  0001 C CNN
+	1    8400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 60D016DB
+P 7400 4300
+F 0 "#PWR012" H 7400 4050 50  0001 C CNN
+F 1 "GND" H 7405 4127 50  0000 C CNN
+F 2 "" H 7400 4300 50  0001 C CNN
+F 3 "" H 7400 4300 50  0001 C CNN
+	1    7400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4600 8400 4650
+Wire Wire Line
+	8300 4300 8400 4300
+NoConn ~ 8000 4700
+Wire Wire Line
+	7600 4700 7250 4700
+Wire Wire Line
+	7250 4700 7250 4300
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 60D172D7
+P 2550 3500
+F 0 "J5" H 2658 3781 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2400 3700 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2550 3500 50  0001 C CNN
+F 3 "~" H 2550 3500 50  0001 C CNN
+	1    2550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 60D1C18D
+P 7250 4300
+F 0 "#PWR011" H 7250 4150 50  0001 C CNN
+F 1 "VCC" H 7265 4473 50  0000 C CNN
+F 2 "" H 7250 4300 50  0001 C CNN
+F 3 "" H 7250 4300 50  0001 C CNN
+	1    7250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR010
+U 1 1 60D1CB59
+P 2950 3100
+F 0 "#PWR010" H 2950 2950 50  0001 C CNN
+F 1 "VCC" H 2965 3273 50  0000 C CNN
+F 2 "" H 2950 3100 50  0001 C CNN
+F 3 "" H 2950 3100 50  0001 C CNN
+	1    2950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 60D1D0AB
+P 2850 3800
+F 0 "#PWR09" H 2850 3550 50  0001 C CNN
+F 1 "GND" H 2855 3627 50  0000 C CNN
+F 2 "" H 2850 3800 50  0001 C CNN
+F 3 "" H 2850 3800 50  0001 C CNN
+	1    2850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3400 2850 3400
+Wire Wire Line
+	2750 3700 2850 3700
+Wire Wire Line
+	2850 3700 2850 3800
+Text GLabel 3350 3500 2    50   Input ~ 0
+SDA
+Text GLabel 3350 3600 2    50   Input ~ 0
+SCL
+Text GLabel 5500 4700 3    50   Input ~ 0
+SDA
+Text GLabel 7700 4700 3    50   Input ~ 0
+SDA
+Text GLabel 5600 4700 3    50   Input ~ 0
+SCL
+Text GLabel 7800 4700 3    50   Input ~ 0
+SCL
+$Comp
+L Device:R R17
+U 1 1 60D229B6
+P 2950 3250
+F 0 "R17" H 3020 3296 50  0000 L CNN
+F 1 "10K" H 3020 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2880 3250 50  0001 C CNN
+F 3 "~" H 2950 3250 50  0001 C CNN
+	1    2950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 60D238EC
+P 3250 3250
+F 0 "R18" H 3320 3296 50  0000 L CNN
+F 1 "10K" H 3320 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 3180 3250 50  0001 C CNN
+F 3 "~" H 3250 3250 50  0001 C CNN
+	1    3250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3500 2950 3500
+Wire Wire Line
+	2950 3400 2950 3500
+Connection ~ 2950 3500
+Wire Wire Line
+	2850 3100 2950 3100
+Wire Wire Line
+	2850 3100 2850 3400
+Connection ~ 2950 3100
+Wire Wire Line
+	2950 3100 3250 3100
+Wire Wire Line
+	2950 3500 3350 3500
+Wire Wire Line
+	2750 3600 3250 3600
+Wire Wire Line
+	3250 3400 3250 3600
+Connection ~ 3250 3600
+Wire Wire Line
+	3250 3600 3350 3600
+Connection ~ 8400 4300
+Text GLabel 7600 3900 1    50   Input ~ 0
+A3
+Text GLabel 7700 3900 1    50   Input ~ 0
+A2
+Text GLabel 7800 3900 1    50   Input ~ 0
+A1
+Text GLabel 7900 3900 1    50   Input ~ 0
+A0
+Text Notes 5900 5000 2    50   ~ 0
+ADDR: 1001000
+Text Notes 7500 5000 0    50   ~ 0
+ADDR: 1001001
+$Comp
+L Connector:Conn_01x04_Male J6
+U 1 1 60D4012C
+P 2550 4600
+F 0 "J6" H 2658 4881 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2658 4790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2550 4600 50  0001 C CNN
+F 3 "~" H 2550 4600 50  0001 C CNN
+	1    2550 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 4500 2    50   Input ~ 0
+A0
+Text GLabel 2750 4600 2    50   Input ~ 0
+A1
+Text GLabel 2750 4700 2    50   Input ~ 0
+A2
+Text GLabel 2750 4800 2    50   Input ~ 0
+A3
 $EndSCHEMATC
