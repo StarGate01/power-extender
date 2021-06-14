@@ -4,7 +4,7 @@ Hardware for a power and IO extension PCB with current monitoring.
 
 ## Design Goals
 
- - Digital interface for RPi
+ - Serial interface for RPi
  - 4 Relays (3 active + 1 hot spare)
    - Rated for min. 12V / 8A inductive loads (rotary pumps)
    - Current monitoring
@@ -29,6 +29,8 @@ Hardware for a power and IO extension PCB with current monitoring.
   - 4 aux digital IO pins and 4 aux ADC pins
   - High power interface directly at relay outputs
   - Arduino compatible pin headers for aux signals
+  - 5V circuit due to current draw and RPi limits
+  - Voltage level-shifter for I2C
    
 ### Relay subsystem
 
@@ -52,23 +54,29 @@ Hardware for a power and IO extension PCB with current monitoring.
 ### Constraints
 
   - Price
-  - Availability at LCSC
-  - SMD preferred due to size (assembly will be done at the fab)
+  - In stock at LCSC
+  - SMD preferred, assembly will be done at the fab
 
 ### Selection
 
-  - Standalone I2C port extender
-  - Current measuring IC: ~~`ACS712ELCTR-20A-T`~~ `CC6902SO-10A`
+  - Standalone I2C port extender: `PCA9557PW`
+  - Current measuring IC: `CC6902SO-10A`
+    - Max. current: 10A
+    - Signal level: 5V
   - Standalone I2C ADCs: `ADS1115IDGSR`
+    - Voltage level: 5V
   - Relays: `SRD-05VDC-SL-C`
-    - Coil sensitivity: 0.45W / 90 mA at 5V
+    - Coil sensitivity: 0.36W / 72 mA at 5V
     - Optocoupler: `PC817X2CSP9F`
-      - Input: 1.2V
-      - Transfer current: 6.5 - 13 mA
+      - Input: 1.2V, 10-20 mA
+      - Transfer ratio: min. 50%
     - NPN Transistor: `2N3904S-RTK/PS`
     - Flyback diode: `1N4007`
-  - Indicator LEDs
+      - SMA format
+  - Indicator LEDs: `17-21SURC/S530-A3/TR8`
     - Red
-    - 0603 format
-  - Various passive components
-    - 0603 format
+    - 0805 format
+  - Resistors and capacitors
+    - 0805 format
+  - Shifting MOSFETS: `BSS138`
+    - SOT-23 format
