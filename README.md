@@ -73,14 +73,17 @@ Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com
   - Relays: `SRD-05VDC-SL-C`
     - Coil sensitivity: 0.36W / 72 mA at 5V
     - Optocoupler: `PC817X2CSP9F`
-      - Input: 1.2V, 10-20 mA
+      - Input: 1.2V, ca. 20 mA
       - Transfer ratio: min. 50%
-    - NPN Transistor: `2N3904S-RTK/PS`
+    - NPN Transistor: `PMBT3904,215`
+      - Max. 0.2A output
+      - 1K base resistor to limit optocoupler current
+      - Gain ca. 100 for max. theoretical current of ca. 0.4A
     - Flyback diode: `1N4007`
       - SMA format
   - Indicator LEDs: `17-21SURC/S530-A3/TR8`
-    - Red
-    - 0805 format
+    - 200 Ohm resistor for 2V, ca. 15 mA
+    - Red, 0805 format
   - Resistors and capacitors
     - 0805 format
   - Shifting MOSFETS: `BSS138`
