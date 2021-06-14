@@ -1,8 +1,15 @@
 # Power Extender
+
 Hardware for a power and IO extension PCB with current monitoring.
 
+## Usage
 
-## Design Goals
+Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com/StarGate01/KiCadLibs) to view and edit this project.
+
+
+## Design
+
+### Goals
 
  - Serial interface for RPi
  - 4 Relays (3 active + 1 hot spare)
@@ -11,8 +18,6 @@ Hardware for a power and IO extension PCB with current monitoring.
  - ca. 4 additional digital IO pins (TTL)
  - ca. 4 additional analog input pins
  - Operate in damp, cold and hot environments
-
-## Design
 
 ### Board
 
