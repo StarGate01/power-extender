@@ -54,7 +54,7 @@ Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com
   - Multi-channel ADC connected to I2C bus
  
  
- ## Component selection
+## Component selection
 
 ### Constraints
 
