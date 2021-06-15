@@ -81,6 +81,7 @@ Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com
       - Gain ca. 100 for max. theoretical current of ca. 0.4A
     - Flyback diode: `1N4007`
       - SMA format
+    - Screw terminals: 
   - Indicator LEDs: `17-21SURC/S530-A3/TR8`
     - 200 Ohm resistor for 2V, ca. 15 mA
     - Red, 0805 format

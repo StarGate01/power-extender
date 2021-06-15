@@ -733,4 +733,37 @@ Wire Notes Line
 	5950 3300 5950 6000
 Wire Notes Line
 	8950 3300 8950 6000
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 60E092A2
+P 8350 2250
+F 0 "FID1" H 8435 2296 50  0000 L CNN
+F 1 "Fiducial" H 8435 2205 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8350 2250 50  0001 C CNN
+F 3 "~" H 8350 2250 50  0001 C CNN
+	1    8350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 60E0A4F4
+P 8350 2500
+F 0 "FID2" H 8435 2546 50  0000 L CNN
+F 1 "Fiducial" H 8435 2455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8350 2500 50  0001 C CNN
+F 3 "~" H 8350 2500 50  0001 C CNN
+	1    8350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 60E11CA0
+P 8350 2750
+F 0 "FID3" H 8435 2796 50  0000 L CNN
+F 1 "Fiducial" H 8435 2705 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8350 2750 50  0001 C CNN
+F 3 "~" H 8350 2750 50  0001 C CNN
+	1    8350 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
