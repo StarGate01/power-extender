@@ -7,6 +7,22 @@ Hardware for a power and IO extension PCB with current monitoring.
 Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com/StarGate01/KiCadLibs) to view and edit this project.
 
 
+## State of the Project
+
+ - [x] Lay out circuit
+ - [x] Select components
+ - [x] Lay out PCB
+ - [ ] Export rev. 1 fabrication files
+ - [ ] PCB fabrication and assembly
+ - [ ] Verification
+
+
+## Images
+
+![3D Render](tba)
+
+![PCB layout](tba)
+
 ## Design
 
 ### Goals
@@ -81,7 +97,7 @@ Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com
       - Gain ca. 100 for max. theoretical current of ca. 0.4A
     - Flyback diode: `1N4007`
       - SMA format
-    - Screw terminals: 
+    - Screw terminals: 5mm pitch
   - Indicator LEDs: `17-21SURC/S530-A3/TR8`
     - 200 Ohm resistor for 2V, ca. 15 mA
     - Red, 0805 format
