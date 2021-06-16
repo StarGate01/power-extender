@@ -266,9 +266,9 @@ F 3 "" H 2500 2650 50  0001 C CNN
 	1    2500 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8150 5250 2    50   Input ~ 0
-D1
 Text GLabel 8150 5350 2    50   Input ~ 0
+D1
+Text GLabel 8150 5250 2    50   Input ~ 0
 D2
 Text GLabel 3350 2100 1    50   BiDi ~ 0
 SDA5V
@@ -367,7 +367,7 @@ F 3 "~" H 7950 5250 50  0001 C CNN
 	1    7950 5250
 	1    0    0    -1  
 $EndComp
-Text GLabel 8150 5450 2    50   Input ~ 0
+Text GLabel 8150 5150 2    50   Input ~ 0
 D3
 $Comp
 L Connector:Conn_01x05_Male J1
@@ -491,28 +491,6 @@ F 3 "~" H 8350 1500 50  0001 C CNN
 	1    8350 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 60DEB62A
-P 8350 1750
-F 0 "H3" H 8450 1796 50  0000 L CNN
-F 1 "MountingHole" H 8450 1705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8350 1750 50  0001 C CNN
-F 3 "~" H 8350 1750 50  0001 C CNN
-	1    8350 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 60DEBDBB
-P 8350 2000
-F 0 "H4" H 8450 2046 50  0000 L CNN
-F 1 "MountingHole" H 8450 1955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8350 2000 50  0001 C CNN
-F 3 "~" H 8350 2000 50  0001 C CNN
-	1    8350 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 4150 6850 4150
 Wire Wire Line
@@ -529,7 +507,7 @@ Text GLabel 6500 5450 2    50   Input ~ 0
 SCL3V3
 Text GLabel 6500 5350 2    50   BiDi ~ 0
 SDA3V3
-Text GLabel 8150 5150 2    50   Input ~ 0
+Text GLabel 8150 5450 2    50   Input ~ 0
 D0Z
 Wire Wire Line
 	7700 4550 7300 4550
