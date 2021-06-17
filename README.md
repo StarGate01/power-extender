@@ -4,7 +4,7 @@ Hardware for a power and IO extension PCB with current monitoring.
 
 ## Usage
 
-Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com/StarGate01/KiCadLibs) to view and edit this project. Use [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
+Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com/StarGate01/KiCadLibs) to view and edit this project, or download the [circuit schematic PDF](https://raw.githubusercontent.com/StarGate01/power-extender/master/images/rev0/schematic.pdf) and the fabrication files. Use [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
 
 
 ## State of the Project
@@ -13,15 +13,15 @@ Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com
  - [x] Select components
  - [x] Lay out PCB
  - [ ] Export rev. 1 fabrication files
- - [ ] PCB fabrication and assembly
+ - [ ] PCB fabrication and assembly in progress
  - [ ] Verification
 
 
 ## Images
 
-![3D Render](tba)
+![3D Render](https://raw.githubusercontent.com/StarGate01/power-extender/master/images/rev0/render.png)
 
-![PCB layout](tba)
+![PCB layout](https://raw.githubusercontent.com/StarGate01/power-extender/master/images/rev0/layout.png)
 
 ## Design
 
