@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 3 5
 Title "Relay Subsystem"
 Date "2021-06-11"
 Rev "1"
@@ -14,32 +14,24 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Q_NPN_BEC Q11
-U 1 1 60C3AACC
-P 5350 4250
-AR Path="/60C36AE5/60C3AACC" Ref="Q11"  Part="1" 
-AR Path="/60CBD6BF/60C3AACC" Ref="Q21"  Part="1" 
-AR Path="/60CBD77D/60C3AACC" Ref="Q31"  Part="1" 
-AR Path="/60CBD7BB/60C3AACC" Ref="Q41"  Part="1" 
-F 0 "Q11" H 5541 4296 50  0000 L CNN
-F 1 "PMBT3904" H 5541 4205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 4350 50  0001 C CNN
-F 3 "~" H 5350 4250 50  0001 C CNN
-	1    5350 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R13
-U 1 1 60C3DB9C
+U 1 1 60D1BECF
 P 4700 4250
-AR Path="/60C36AE5/60C3DB9C" Ref="R13"  Part="1" 
-AR Path="/60CBD6BF/60C3DB9C" Ref="R23"  Part="1" 
-AR Path="/60CBD77D/60C3DB9C" Ref="R33"  Part="1" 
-AR Path="/60CBD7BB/60C3DB9C" Ref="R43"  Part="1" 
-F 0 "R13" V 4800 4200 50  0000 L CNN
+AR Path="/60C36AE5/60D1BECF" Ref="R13"  Part="1" 
+AR Path="/60CBD6BF/60D1BECF" Ref="R23"  Part="1" 
+AR Path="/60CBD77D/60D1BECF" Ref="R33"  Part="1" 
+AR Path="/60CBD7BB/60D1BECF" Ref="R43"  Part="1" 
+F 0 "R33" V 4800 4200 50  0000 L CNN
 F 1 "1K" V 4600 4200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4630 4250 50  0001 C CNN
 F 3 "~" H 4700 4250 50  0001 C CNN
+F 4 "RES 1K OHM MAX. 1% MIN. 1/8W 0805 SMD" H 4700 4250 50  0001 C CNN "Description / Value"
+F 5 "Any" H 4700 4250 50  0001 C CNN "Distributor"
+F 6 "TBD" H 4700 4250 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 4700 4250 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 4700 4250 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 4700 4250 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 4700 4250 50  0001 C CNN "Type"
 	1    4700 4250
 	0    -1   -1   0   
 $EndComp
@@ -51,10 +43,18 @@ AR Path="/60C36AE5/60C4BBD2" Ref="J11"  Part="1"
 AR Path="/60CBD6BF/60C4BBD2" Ref="J21"  Part="1" 
 AR Path="/60CBD77D/60C4BBD2" Ref="J31"  Part="1" 
 AR Path="/60CBD7BB/60C4BBD2" Ref="J41"  Part="1" 
-F 0 "J11" H 6550 2050 50  0000 L CNN
+F 0 "J31" H 6550 2050 50  0000 L CNN
 F 1 "LOAD" H 6550 2150 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 6600 2350 50  0001 C CNN
 F 3 "~" H 6600 2350 50  0001 C CNN
+F 4 "CONN SCREW TERMINAL PITCH-5.0MM 3 PIN 20A" H 6600 2350 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 6600 2350 50  0001 C CNN "Distributor"
+F 6 "C8270" H 6600 2350 50  0001 C CNN "Distributor part #"
+F 7 "Ningbo Kangnex Elec" H 6600 2350 50  0001 C CNN "Manufacturer"
+F 8 "WJ128V-5.0-3P" H 6600 2350 50  0001 C CNN "Manufacturer Part #"
+F 9 "Through-Hole" H 6600 2350 50  0001 C CNN "Package / Footprint"
+F 10 "THT" H 6600 2350 50  0001 C CNN "Type"
+F 11 "" H 6600 2350 50  0001 C CNN "Notes"
 	1    6600 2350
 	1    0    0    1   
 $EndComp
@@ -69,7 +69,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 4250 5150 4250
 Wire Wire Line
-	3900 4250 4550 4250
+	3900 4250 4200 4250
 Wire Wire Line
 	5450 3900 4650 3900
 Connection ~ 5450 3900
@@ -107,35 +107,42 @@ Wire Wire Line
 	4300 3000 4300 2850
 $Comp
 L Relay:SANYOU_SRD_Form_C K11
-U 1 1 60C370D4
+U 1 1 60D1BECB
 P 5650 3450
-AR Path="/60C36AE5/60C370D4" Ref="K11"  Part="1" 
-AR Path="/60CBD6BF/60C370D4" Ref="K21"  Part="1" 
-AR Path="/60CBD77D/60C370D4" Ref="K31"  Part="1" 
-AR Path="/60CBD7BB/60C370D4" Ref="K41"  Part="1" 
-F 0 "K11" H 5350 3900 50  0000 C CNN
+AR Path="/60C36AE5/60D1BECB" Ref="K11"  Part="1" 
+AR Path="/60CBD6BF/60D1BECB" Ref="K21"  Part="1" 
+AR Path="/60CBD77D/60D1BECB" Ref="K31"  Part="1" 
+AR Path="/60CBD7BB/60D1BECB" Ref="K41"  Part="1" 
+F 0 "K31" H 5350 3900 50  0000 C CNN
 F 1 "SRD-05VDC-SL-C" H 5050 3800 50  0000 C CNN
 F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6100 3400 50  0001 L CNN
 F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5650 3450 50  0001 C CNN
+F 4 "RELAY 5V 10A" H 5650 3450 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 5650 3450 50  0001 C CNN "Distributor"
+F 6 "C35449" H 5650 3450 50  0001 C CNN "Distributor part #"
+F 7 "Ningbo Songle Relay" H 5650 3450 50  0001 C CNN "Manufacturer"
+F 8 "SRD-05VDC-SL-C" H 5650 3450 50  0001 C CNN "Manufacturer Part #"
+F 9 "Through-Hole" H 5650 3450 50  0001 C CNN "Package / Footprint"
+F 10 "THT" H 5650 3450 50  0001 C CNN "Type"
 	1    5650 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5450 4450 5450 4650
 Wire Wire Line
-	5450 4650 3200 4650
+	5450 4650 4200 4650
 Wire Wire Line
 	3200 4250 3200 4650
 Connection ~ 5450 4650
 $Comp
 L power:GND #PWR0101
-U 1 1 60C91E1E
+U 1 1 60D1BED3
 P 5450 4850
-AR Path="/60C36AE5/60C91E1E" Ref="#PWR0101"  Part="1" 
-AR Path="/60CBD6BF/60C91E1E" Ref="#PWR022"  Part="1" 
-AR Path="/60CBD77D/60C91E1E" Ref="#PWR032"  Part="1" 
-AR Path="/60CBD7BB/60C91E1E" Ref="#PWR042"  Part="1" 
-F 0 "#PWR0101" H 5450 4600 50  0001 C CNN
+AR Path="/60C36AE5/60D1BED3" Ref="#PWR0101"  Part="1" 
+AR Path="/60CBD6BF/60D1BED3" Ref="#PWR022"  Part="1" 
+AR Path="/60CBD77D/60D1BED3" Ref="#PWR032"  Part="1" 
+AR Path="/60CBD7BB/60D1BED3" Ref="#PWR042"  Part="1" 
+F 0 "#PWR032" H 5450 4600 50  0001 C CNN
 F 1 "GND" H 5455 4677 50  0000 C CNN
 F 2 "" H 5450 4850 50  0001 C CNN
 F 3 "" H 5450 4850 50  0001 C CNN
@@ -154,16 +161,23 @@ Wire Wire Line
 	7000 3550 7000 4650
 $Comp
 L CustomComponents:CC690XSO-XA U32
-U 1 1 60D16B35
+U 1 1 60D1BED9
 P 6650 3400
-AR Path="/60CBD77D/60D16B35" Ref="U32"  Part="1" 
-AR Path="/60C36AE5/60D16B35" Ref="U12"  Part="1" 
-AR Path="/60CBD6BF/60D16B35" Ref="U22"  Part="1" 
-AR Path="/60CBD7BB/60D16B35" Ref="U42"  Part="1" 
-F 0 "U12" H 6650 3815 50  0000 C CNN
+AR Path="/60CBD77D/60D1BED9" Ref="U32"  Part="1" 
+AR Path="/60C36AE5/60D1BED9" Ref="U12"  Part="1" 
+AR Path="/60CBD6BF/60D1BED9" Ref="U22"  Part="1" 
+AR Path="/60CBD7BB/60D1BED9" Ref="U42"  Part="1" 
+F 0 "U32" H 6650 3815 50  0000 C CNN
 F 1 "CC6902SO-10A" H 6650 3724 50  0000 C CNN
 F 2 "CustomComponents:CC690XSO-XA" H 6650 3100 50  0001 C CNN
 F 3 "" H 6650 3600 50  0001 C CNN
+F 4 "IC CURRENT SENSOR 5V 10A SOP-8" H 6650 3400 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 6650 3400 50  0001 C CNN "Distributor"
+F 6 "C350865" H 6650 3400 50  0001 C CNN "Distributor part #"
+F 7 "Cross Chip" H 6650 3400 50  0001 C CNN "Manufacturer"
+F 8 "CC6902SO-10A" H 6650 3400 50  0001 C CNN "Manufacturer Part #"
+F 9 "SOP-8" H 6650 3400 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 6650 3400 50  0001 C CNN "Type"
 	1    6650 3400
 	1    0    0    -1  
 $EndComp
@@ -181,7 +195,7 @@ AR Path="/60C36AE5/60CD3C14" Ref="#PWR0102"  Part="1"
 AR Path="/60CBD6BF/60CD3C14" Ref="#PWR021"  Part="1" 
 AR Path="/60CBD77D/60CD3C14" Ref="#PWR031"  Part="1" 
 AR Path="/60CBD7BB/60CD3C14" Ref="#PWR041"  Part="1" 
-F 0 "#PWR0102" H 4300 2500 50  0001 C CNN
+F 0 "#PWR031" H 4300 2500 50  0001 C CNN
 F 1 "+5V" H 4315 2823 50  0000 C CNN
 F 2 "" H 4300 2650 50  0001 C CNN
 F 3 "" H 4300 2650 50  0001 C CNN
@@ -190,31 +204,45 @@ F 3 "" H 4300 2650 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C11
-U 1 1 60C94FE5
+U 1 1 60D1BED4
 P 7750 3900
-AR Path="/60C36AE5/60C94FE5" Ref="C11"  Part="1" 
-AR Path="/60CBD6BF/60C94FE5" Ref="C21"  Part="1" 
-AR Path="/60CBD77D/60C94FE5" Ref="C31"  Part="1" 
-AR Path="/60CBD7BB/60C94FE5" Ref="C41"  Part="1" 
-F 0 "C11" H 7865 3946 50  0000 L CNN
+AR Path="/60C36AE5/60D1BED4" Ref="C11"  Part="1" 
+AR Path="/60CBD6BF/60D1BED4" Ref="C21"  Part="1" 
+AR Path="/60CBD77D/60D1BED4" Ref="C31"  Part="1" 
+AR Path="/60CBD7BB/60D1BED4" Ref="C41"  Part="1" 
+F 0 "C31" H 7865 3946 50  0000 L CNN
 F 1 "100P" H 7865 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7788 3750 50  0001 C CNN
 F 3 "~" H 7750 3900 50  0001 C CNN
+F 4 "CAP CER 100PF MAX. 5% MIN. 10V 0805 SMD" H 7750 3900 50  0001 C CNN "Description / Value"
+F 5 "Any" H 7750 3900 50  0001 C CNN "Distributor"
+F 6 "TBD" H 7750 3900 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 7750 3900 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 7750 3900 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 7750 3900 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 7750 3900 50  0001 C CNN "Type"
 	1    7750 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R14
-U 1 1 60CDBA1D
+U 1 1 60D1BED7
 P 7500 3350
-AR Path="/60C36AE5/60CDBA1D" Ref="R14"  Part="1" 
-AR Path="/60CBD6BF/60CDBA1D" Ref="R24"  Part="1" 
-AR Path="/60CBD77D/60CDBA1D" Ref="R34"  Part="1" 
-AR Path="/60CBD7BB/60CDBA1D" Ref="R44"  Part="1" 
-F 0 "R14" V 7293 3350 50  0000 C CNN
+AR Path="/60C36AE5/60D1BED7" Ref="R14"  Part="1" 
+AR Path="/60CBD6BF/60D1BED7" Ref="R24"  Part="1" 
+AR Path="/60CBD77D/60D1BED7" Ref="R34"  Part="1" 
+AR Path="/60CBD7BB/60D1BED7" Ref="R44"  Part="1" 
+F 0 "R34" V 7293 3350 50  0000 C CNN
 F 1 "100R" V 7384 3350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7430 3350 50  0001 C CNN
 F 3 "~" H 7500 3350 50  0001 C CNN
+F 4 "RES 100 OHM MAX. 1% MIN. 1/8W 0805 SMD" H 7500 3350 50  0001 C CNN "Description / Value"
+F 5 "Any" H 7500 3350 50  0001 C CNN "Distributor"
+F 6 "TBD" H 7500 3350 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 7500 3350 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 7500 3350 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 7500 3350 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 7500 3350 50  0001 C CNN "Type"
 	1    7500 3350
 	0    1    1    0   
 $EndComp
@@ -224,16 +252,23 @@ Wire Wire Line
 	7750 4050 7750 4650
 $Comp
 L Device:C C12
-U 1 1 60C99EC6
+U 1 1 60D1BED5
 P 8300 3900
-AR Path="/60C36AE5/60C99EC6" Ref="C12"  Part="1" 
-AR Path="/60CBD6BF/60C99EC6" Ref="C22"  Part="1" 
-AR Path="/60CBD77D/60C99EC6" Ref="C32"  Part="1" 
-AR Path="/60CBD7BB/60C99EC6" Ref="C42"  Part="1" 
-F 0 "C12" H 8415 3946 50  0000 L CNN
+AR Path="/60C36AE5/60D1BED5" Ref="C12"  Part="1" 
+AR Path="/60CBD6BF/60D1BED5" Ref="C22"  Part="1" 
+AR Path="/60CBD77D/60D1BED5" Ref="C32"  Part="1" 
+AR Path="/60CBD7BB/60D1BED5" Ref="C42"  Part="1" 
+F 0 "C32" H 8415 3946 50  0000 L CNN
 F 1 "100N" H 8415 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8338 3750 50  0001 C CNN
 F 3 "~" H 8300 3900 50  0001 C CNN
+F 4 "CAP CER 100NF MAX. 5% MIN. 10V 0805 SMD" H 8300 3900 50  0001 C CNN "Description / Value"
+F 5 "Any" H 8300 3900 50  0001 C CNN "Distributor"
+F 6 "TBD" H 8300 3900 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 8300 3900 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 8300 3900 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 8300 3900 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 8300 3900 50  0001 C CNN "Type"
 	1    8300 3900
 	1    0    0    -1  
 $EndComp
@@ -261,8 +296,8 @@ Text Notes 7250 3000 0    50   ~ 0
 Low-pass Filter 15.9 MHz
 Text Notes 3350 4500 0    50   ~ 0
 CTR min. 50%\nIF = 19mA
-Text Notes 5550 4500 0    50   ~ 0
-0.4A max (0.2A limit) \nat hFE = 100 
+Text Notes 5550 4450 0    50   ~ 0
+0.2A at hFE = 50
 Connection ~ 7000 4650
 Connection ~ 7050 2850
 Wire Wire Line
@@ -291,10 +326,17 @@ AR Path="/60C36AE5/60C3D896" Ref="R12"  Part="1"
 AR Path="/60CBD6BF/60C3D896" Ref="R22"  Part="1" 
 AR Path="/60CBD77D/60C3D896" Ref="R32"  Part="1" 
 AR Path="/60CBD7BB/60C3D896" Ref="R42"  Part="1" 
-F 0 "R12" H 4370 3196 50  0000 L CNN
+F 0 "R32" H 4370 3196 50  0000 L CNN
 F 1 "200R" H 4370 3105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4230 3150 50  0001 C CNN
 F 3 "~" H 4300 3150 50  0001 C CNN
+F 4 "RES 200 OHM MAX. 1% MIN. 1/8W 0805 SMD" H 4300 3150 50  0001 C CNN "Description / Value"
+F 5 "Any" H 4300 3150 50  0001 C CNN "Distributor"
+F 6 "TBD" H 4300 3150 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 4300 3150 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 4300 3150 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 4300 3150 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 4300 3150 50  0001 C CNN "Type"
 	1    4300 3150
 	1    0    0    -1  
 $EndComp
@@ -306,10 +348,17 @@ AR Path="/60C36AE5/60C544FE" Ref="D12"  Part="1"
 AR Path="/60CBD6BF/60C544FE" Ref="D22"  Part="1" 
 AR Path="/60CBD77D/60C544FE" Ref="D32"  Part="1" 
 AR Path="/60CBD7BB/60C544FE" Ref="D42"  Part="1" 
-F 0 "D12" V 4604 3530 50  0000 L CNN
+F 0 "D32" V 4604 3530 50  0000 L CNN
 F 1 "1N4007F" V 4695 3530 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" H 4650 3450 50  0001 C CNN
 F 3 "~" H 4650 3450 50  0001 C CNN
+F 4 "DIODE 1N4007 SMAF" H 4650 3450 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 4650 3450 50  0001 C CNN "Distributor"
+F 6 "C110856" H 4650 3450 50  0001 C CNN "Distributor part #"
+F 7 "Shikues" H 4650 3450 50  0001 C CNN "Manufacturer"
+F 8 "1N4007F" H 4650 3450 50  0001 C CNN "Manufacturer Part #"
+F 9 "SMAF" H 4650 3450 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 4650 3450 50  0001 C CNN "Type"
 	1    4650 3450
 	0    1    1    0   
 $EndComp
@@ -321,10 +370,17 @@ AR Path="/60C36AE5/60C3C98C" Ref="D11"  Part="1"
 AR Path="/60CBD6BF/60C3C98C" Ref="D21"  Part="1" 
 AR Path="/60CBD77D/60C3C98C" Ref="D31"  Part="1" 
 AR Path="/60CBD7BB/60C3C98C" Ref="D41"  Part="1" 
-F 0 "D11" V 4300 3750 50  0000 C CNN
+F 0 "D31" V 4300 3750 50  0000 C CNN
 F 1 "LED" V 4200 3750 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 4300 3600 50  0001 C CNN
 F 3 "~" H 4300 3600 50  0001 C CNN
+F 4 "LED RED 2V 0805 SMD" H 4300 3600 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 4300 3600 50  0001 C CNN "Distributor"
+F 6 "C72037" H 4300 3600 50  0001 C CNN "Distributor part #"
+F 7 "Everlight Elec" H 4300 3600 50  0001 C CNN "Manufacturer"
+F 8 "17-21SURC/S530-A3/TR8" H 4300 3600 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 4300 3600 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 4300 3600 50  0001 C CNN "Type"
 	1    4300 3600
 	0    -1   -1   0   
 $EndComp
@@ -336,10 +392,17 @@ AR Path="/60CBD77D/60D16537" Ref="U31"  Part="1"
 AR Path="/60C36AE5/60D16537" Ref="U11"  Part="1" 
 AR Path="/60CBD6BF/60D16537" Ref="U21"  Part="1" 
 AR Path="/60CBD7BB/60D16537" Ref="U41"  Part="1" 
-F 0 "U11" H 3600 4475 50  0000 C CNN
+F 0 "U31" H 3600 4475 50  0000 C CNN
 F 1 "PC817X2CSP9F" H 3600 4384 50  0000 C CNN
 F 2 "CustomComponents:PC817X2CSP9F" H 3400 3950 50  0001 L CIN
 F 3 "" H 3600 4150 50  0001 L CNN
+F 4 "IC OPTOCOUPLER SMD-4" H 3600 4150 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 3600 4150 50  0001 C CNN "Distributor"
+F 6 "C66405" H 3600 4150 50  0001 C CNN "Distributor part #"
+F 7 "Sharp Microelectronics" H 3600 4150 50  0001 C CNN "Manufacturer"
+F 8 "PC817X2CSP9F" H 3600 4150 50  0001 C CNN "Manufacturer Part #"
+F 9 "SMD-4" H 3600 4150 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 3600 4150 50  0001 C CNN "Type"
 	1    3600 4150
 	1    0    0    -1  
 $EndComp
@@ -351,10 +414,17 @@ AR Path="/60C36AE5/60C3E090" Ref="R11"  Part="1"
 AR Path="/60CBD6BF/60C3E090" Ref="R21"  Part="1" 
 AR Path="/60CBD77D/60C3E090" Ref="R31"  Part="1" 
 AR Path="/60CBD7BB/60C3E090" Ref="R41"  Part="1" 
-F 0 "R11" V 3000 4000 50  0000 L CNN
+F 0 "R31" V 3000 4000 50  0000 L CNN
 F 1 "200R" V 2800 3950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 4050 50  0001 C CNN
 F 3 "~" H 2900 4050 50  0001 C CNN
+F 4 "RES 200 OHM MAX. 1% MIN. 1/8W 0805 SMD" H 2900 4050 50  0001 C CNN "Description / Value"
+F 5 "Any" H 2900 4050 50  0001 C CNN "Distributor"
+F 6 "TBD" H 2900 4050 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 2900 4050 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 2900 4050 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 2900 4050 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 2900 4050 50  0001 C CNN "Type"
 	1    2900 4050
 	0    -1   -1   0   
 $EndComp
@@ -376,4 +446,54 @@ Wire Wire Line
 Connection ~ 6300 3500
 Wire Wire Line
 	6300 3500 6300 3550
+$Comp
+L Device:R R15
+U 1 1 60D95417
+P 4200 4400
+AR Path="/60C36AE5/60D95417" Ref="R15"  Part="1" 
+AR Path="/60CBD77D/60D95417" Ref="R35"  Part="1" 
+F 0 "R35" H 4270 4446 50  0000 L CNN
+F 1 "10K" H 4270 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4130 4400 50  0001 C CNN
+F 3 "~" H 4200 4400 50  0001 C CNN
+F 4 "RES 10K OHM MAX. 1% MIN. 1/8W 0805 SMD" H 4200 4400 50  0001 C CNN "Description / Value"
+F 5 "Any" H 4200 4400 50  0001 C CNN "Distributor"
+F 6 "TBD" H 4200 4400 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 4200 4400 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 4200 4400 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 4200 4400 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 4200 4400 50  0001 C CNN "Type"
+	1    4200 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 4250
+Wire Wire Line
+	4200 4250 4550 4250
+$Comp
+L Device:Q_NPN_BEC Q11
+U 1 1 60C3AACC
+P 5350 4250
+AR Path="/60C36AE5/60C3AACC" Ref="Q11"  Part="1" 
+AR Path="/60CBD6BF/60C3AACC" Ref="Q21"  Part="1" 
+AR Path="/60CBD77D/60C3AACC" Ref="Q31"  Part="1" 
+AR Path="/60CBD7BB/60C3AACC" Ref="Q41"  Part="1" 
+F 0 "Q31" H 5541 4296 50  0000 L CNN
+F 1 "PMBT3904" H 5541 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 4350 50  0001 C CNN
+F 3 "~" H 5350 4250 50  0001 C CNN
+F 4 "BJT NPN SOT-23-3" H 5350 4250 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 5350 4250 50  0001 C CNN "Distributor"
+F 6 "C8667" H 5350 4250 50  0001 C CNN "Distributor part #"
+F 7 "Nexperia" H 5350 4250 50  0001 C CNN "Manufacturer"
+F 8 "PMBT3904,215" H 5350 4250 50  0001 C CNN "Manufacturer Part #"
+F 9 "SOT-23-3" H 5350 4250 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 5350 4250 50  0001 C CNN "Type"
+	1    5350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4550 4200 4650
+Connection ~ 4200 4650
+Wire Wire Line
+	4200 4650 3200 4650
 $EndSCHEMATC

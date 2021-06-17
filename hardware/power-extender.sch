@@ -45,6 +45,13 @@ F 0 "U1" V 2550 5650 50  0000 C CNN
 F 1 "ADS1115IDGS" V 2650 5850 50  0000 C CNN
 F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 3000 4950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 2950 4550 50  0001 C CNN
+F 4 "IC I2C 4 CH ADC VSSOP-10" H 3000 5450 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 3000 5450 50  0001 C CNN "Distributor"
+F 6 "C37593" H 3000 5450 50  0001 C CNN "Distributor part #"
+F 7 "Texas Instruments" H 3000 5450 50  0001 C CNN "Manufacturer"
+F 8 "ADS1115IDGSR" H 3000 5450 50  0001 C CNN "Manufacturer Part #"
+F 9 "VSSOP-10" H 3000 5450 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 3000 5450 50  0001 C CNN "Type"
 	1    3000 5450
 	0    1    1    0   
 $EndComp
@@ -56,6 +63,13 @@ F 0 "C1" H 3715 5646 50  0000 L CNN
 F 1 "100N" H 3715 5555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3638 5450 50  0001 C CNN
 F 3 "~" H 3600 5600 50  0001 C CNN
+F 4 "CAP CER 100NF MAX. 5% MIN. 10V 0805 SMD" H 3600 5600 50  0001 C CNN "Description / Value"
+F 5 "Any" H 3600 5600 50  0001 C CNN "Distributor"
+F 6 "TBD" H 3600 5600 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 3600 5600 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 3600 5600 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 3600 5600 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 3600 5600 50  0001 C CNN "Type"
 	1    3600 5600
 	1    0    0    -1  
 $EndComp
@@ -99,6 +113,13 @@ F 0 "U3" V 6250 2150 50  0000 C CNN
 F 1 "ADS1115IDGS" V 6350 2300 50  0000 C CNN
 F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 6700 1350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 6650 950 50  0001 C CNN
+F 4 "IC I2C 4 CH ADC VSSOP-10" H 6700 1850 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 6700 1850 50  0001 C CNN "Distributor"
+F 6 "C37593" H 6700 1850 50  0001 C CNN "Distributor part #"
+F 7 "Texas Instruments" H 6700 1850 50  0001 C CNN "Manufacturer"
+F 8 "ADS1115IDGSR" H 6700 1850 50  0001 C CNN "Manufacturer Part #"
+F 9 "VSSOP-10" H 6700 1850 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 6700 1850 50  0001 C CNN "Type"
 	1    6700 1850
 	0    1    1    0   
 $EndComp
@@ -110,6 +131,13 @@ F 0 "C2" H 7415 2046 50  0000 L CNN
 F 1 "100N" H 7415 1955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7338 1850 50  0001 C CNN
 F 3 "~" H 7300 2000 50  0001 C CNN
+F 4 "CAP CER 100NF MAX. 5% MIN. 10V 0805 SMD" H 7300 2000 50  0001 C CNN "Description / Value"
+F 5 "Any" H 7300 2000 50  0001 C CNN "Distributor"
+F 6 "TBD" H 7300 2000 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 7300 2000 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 7300 2000 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 7300 2000 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 7300 2000 50  0001 C CNN "Type"
 	1    7300 2000
 	1    0    0    -1  
 $EndComp
@@ -179,17 +207,6 @@ Text Notes 3300 6250 2    50   ~ 0
 ADDR: 1001000
 Text Notes 6400 2650 0    50   ~ 0
 ADDR: 1001001
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 60D4012C
-P 7250 5250
-F 0 "J3" H 7358 5531 50  0000 C CNN
-F 1 "AUX ANALOG" H 7358 5440 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 7250 5250 50  0001 C CNN
-F 3 "~" H 7250 5250 50  0001 C CNN
-	1    7250 5250
-	1    0    0    -1  
-$EndComp
 Text GLabel 7450 5150 2    50   Output ~ 0
 A0
 Text GLabel 7450 5250 2    50   Output ~ 0
@@ -252,6 +269,13 @@ F 0 "U2" V 3300 3100 50  0000 L CNN
 F 1 "PCA9557PW" V 3400 3100 50  0000 L CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3100 2600 50  0001 C CNN
 F 3 "" H 3100 2150 50  0001 C CNN
+F 4 "IC I2C 8 CH IO EXP TSSOP-16" H 3100 2600 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 3100 2600 50  0001 C CNN "Distributor"
+F 6 "C141380" H 3100 2600 50  0001 C CNN "Distributor part #"
+F 7 "NXP Semicon" H 3100 2600 50  0001 C CNN "Manufacturer"
+F 8 "PCA9557PW,118" H 3100 2600 50  0001 C CNN "Manufacturer Part #"
+F 9 "TSSOP-16" H 3100 2600 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 3100 2600 50  0001 C CNN "Type"
 	1    3100 2600
 	0    1    1    0   
 $EndComp
@@ -282,6 +306,13 @@ F 0 "R1" H 3220 1696 50  0000 L CNN
 F 1 "1K" H 3220 1605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 1650 50  0001 C CNN
 F 3 "~" H 3150 1650 50  0001 C CNN
+F 4 "RES 1K OHM MAX. 1% MIN. 1/8W 0805 SMD" H 3150 1650 50  0001 C CNN "Description / Value"
+F 5 "Any" H 3150 1650 50  0001 C CNN "Distributor"
+F 6 "TBD" H 3150 1650 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 3150 1650 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 3150 1650 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 3150 1650 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 3150 1650 50  0001 C CNN "Type"
 	1    3150 1650
 	1    0    0    -1  
 $EndComp
@@ -297,15 +328,12 @@ Wire Wire Line
 	2500 2600 2550 2600
 Wire Wire Line
 	2950 2100 2850 2100
-Wire Wire Line
-	2500 2100 2500 2600
 Connection ~ 2750 2100
 Wire Wire Line
 	2750 2100 2500 2100
 Connection ~ 2850 2100
 Wire Wire Line
 	2850 2100 2750 2100
-Connection ~ 2500 2600
 Text Notes 2700 3250 2    50   ~ 0
 ADDR: 0011000
 Wire Notes Line
@@ -356,17 +384,6 @@ Wire Wire Line
 	1600 3350 2750 3350
 Wire Wire Line
 	2750 3350 2750 3100
-$Comp
-L Connector:Conn_01x04_Male J4
-U 1 1 60C77624
-P 7950 5250
-F 0 "J4" H 8058 5531 50  0000 C CNN
-F 1 "AUX DIGITAL" H 8058 5440 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 7950 5250 50  0001 C CNN
-F 3 "~" H 7950 5250 50  0001 C CNN
-	1    7950 5250
-	1    0    0    -1  
-$EndComp
 Text GLabel 8150 5150 2    50   Input ~ 0
 D3
 $Comp
@@ -377,6 +394,14 @@ F 0 "J1" H 6408 4531 50  0000 C CNN
 F 1 "IFACE RPI" H 6300 4450 50  0000 C CNN
 F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 6300 4150 50  0001 C CNN
 F 3 "~" H 6300 4150 50  0001 C CNN
+F 4 "CONN JST-XH-2.50MM VERTICAL MALE HEADER 5 PIN" H 6300 4150 50  0001 C CNN "Description / Value"
+F 5 "Any" H 6300 4150 50  0001 C CNN "Distributor"
+F 6 "TBD" H 6300 4150 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 6300 4150 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 6300 4150 50  0001 C CNN "Manufacturer Part #"
+F 9 "Through-Hole" H 6300 4150 50  0001 C CNN "Package / Footprint"
+F 10 "THT" H 6300 4150 50  0001 C CNN "Type"
+F 11 "" H 6300 4150 50  0001 C CNN "Notes"
 	1    6300 4150
 	1    0    0    -1  
 $EndComp
@@ -459,17 +484,6 @@ Wire Wire Line
 Wire Notes Line
 	8950 3300 5950 3300
 $Comp
-L power:+5V #PWR07
-U 1 1 60DA5585
-P 6150 1850
-F 0 "#PWR07" H 6150 1700 50  0001 C CNN
-F 1 "+5V" H 6165 2023 50  0000 C CNN
-F 2 "" H 6150 1850 50  0001 C CNN
-F 3 "" H 6150 1850 50  0001 C CNN
-	1    6150 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H1
 U 1 1 60DEA646
 P 8350 1250
@@ -477,6 +491,13 @@ F 0 "H1" H 8450 1296 50  0000 L CNN
 F 1 "MountingHole" H 8450 1205 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 8350 1250 50  0001 C CNN
 F 3 "~" H 8350 1250 50  0001 C CNN
+F 4 "MOUNTING HOLE 3.2MM" H 8350 1250 50  0001 C CNN "Description / Value"
+F 5 "N/A" H 8350 1250 50  0001 C CNN "Distributor"
+F 6 "N/A" H 8350 1250 50  0001 C CNN "Distributor part #"
+F 7 "N/A" H 8350 1250 50  0001 C CNN "Manufacturer"
+F 8 "N/A" H 8350 1250 50  0001 C CNN "Manufacturer Part #"
+F 9 "N/A" H 8350 1250 50  0001 C CNN "Package / Footprint"
+F 10 "N/A" H 8350 1250 50  0001 C CNN "Type"
 	1    8350 1250
 	1    0    0    -1  
 $EndComp
@@ -488,6 +509,13 @@ F 0 "H2" H 8450 1546 50  0000 L CNN
 F 1 "MountingHole" H 8450 1455 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 8350 1500 50  0001 C CNN
 F 3 "~" H 8350 1500 50  0001 C CNN
+F 4 "MOUNTING HOLE 3.2MM" H 8350 1500 50  0001 C CNN "Description / Value"
+F 5 "N/A" H 8350 1500 50  0001 C CNN "Distributor"
+F 6 "N/A" H 8350 1500 50  0001 C CNN "Distributor part #"
+F 7 "N/A" H 8350 1500 50  0001 C CNN "Manufacturer"
+F 8 "N/A" H 8350 1500 50  0001 C CNN "Manufacturer Part #"
+F 9 "N/A" H 8350 1500 50  0001 C CNN "Package / Footprint"
+F 10 "N/A" H 8350 1500 50  0001 C CNN "Type"
 	1    8350 1500
 	1    0    0    -1  
 $EndComp
@@ -519,6 +547,13 @@ F 0 "Q2" V 8149 4450 50  0000 C CNN
 F 1 "BSS138" V 8240 4450 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 4375 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 7900 4450 50  0001 L CNN
+F 4 "MOSFET N-CH SOT-23-3" H 7900 4450 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 7900 4450 50  0001 C CNN "Distributor"
+F 6 "C112239" H 7900 4450 50  0001 C CNN "Distributor part #"
+F 7 "Shikues" H 7900 4450 50  0001 C CNN "Manufacturer"
+F 8 "BSS138" H 7900 4450 50  0001 C CNN "Manufacturer Part #"
+F 9 "SOT-23-3" H 7900 4450 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 7900 4450 50  0001 C CNN "Type"
 	1    7900 4450
 	0    1    1    0   
 $EndComp
@@ -576,6 +611,13 @@ F 0 "R4" H 8170 3846 50  0000 L CNN
 F 1 "10K" H 8170 3755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 3800 50  0001 C CNN
 F 3 "~" H 8100 3800 50  0001 C CNN
+F 4 "RES 10K OHM MAX. 1% MIN. 1/8W 0805 SMD" H 8100 3800 50  0001 C CNN "Description / Value"
+F 5 "Any" H 8100 3800 50  0001 C CNN "Distributor"
+F 6 "TBD" H 8100 3800 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 8100 3800 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 8100 3800 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 8100 3800 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 8100 3800 50  0001 C CNN "Type"
 	1    8100 3800
 	1    0    0    -1  
 $EndComp
@@ -587,6 +629,13 @@ F 0 "R2" H 7070 3846 50  0000 L CNN
 F 1 "10K" H 7070 3755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6930 3800 50  0001 C CNN
 F 3 "~" H 7000 3800 50  0001 C CNN
+F 4 "RES 10K OHM MAX. 1% MIN. 1/8W 0805 SMD" H 7000 3800 50  0001 C CNN "Description / Value"
+F 5 "Any" H 7000 3800 50  0001 C CNN "Distributor"
+F 6 "TBD" H 7000 3800 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 7000 3800 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 7000 3800 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 7000 3800 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 7000 3800 50  0001 C CNN "Type"
 	1    7000 3800
 	1    0    0    -1  
 $EndComp
@@ -598,6 +647,13 @@ F 0 "R5" H 8470 3846 50  0000 L CNN
 F 1 "10K" H 8470 3755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8330 3800 50  0001 C CNN
 F 3 "~" H 8400 3800 50  0001 C CNN
+F 4 "RES 10K OHM MAX. 1% MIN. 1/8W 0805 SMD" H 8400 3800 50  0001 C CNN "Description / Value"
+F 5 "Any" H 8400 3800 50  0001 C CNN "Distributor"
+F 6 "TBD" H 8400 3800 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 8400 3800 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 8400 3800 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 8400 3800 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 8400 3800 50  0001 C CNN "Type"
 	1    8400 3800
 	1    0    0    -1  
 $EndComp
@@ -609,6 +665,13 @@ F 0 "Q1" V 7899 4050 50  0000 C CNN
 F 1 "BSS138" V 7990 4050 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7850 3975 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 7650 4050 50  0001 L CNN
+F 4 "MOSFET N-CH SOT-23-3" H 7650 4050 50  0001 C CNN "Description / Value"
+F 5 "LCSC" H 7650 4050 50  0001 C CNN "Distributor"
+F 6 "C112239" H 7650 4050 50  0001 C CNN "Distributor part #"
+F 7 "Shikues" H 7650 4050 50  0001 C CNN "Manufacturer"
+F 8 "BSS138" H 7650 4050 50  0001 C CNN "Manufacturer Part #"
+F 9 "SOT-23-3" H 7650 4050 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 7650 4050 50  0001 C CNN "Type"
 	1    7650 4050
 	0    1    1    0   
 $EndComp
@@ -620,6 +683,13 @@ F 0 "R3" H 7370 3846 50  0000 L CNN
 F 1 "10K" H 7370 3755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7230 3800 50  0001 C CNN
 F 3 "~" H 7300 3800 50  0001 C CNN
+F 4 "RES 10K OHM MAX. 1% MIN. 1/8W 0805 SMD" H 7300 3800 50  0001 C CNN "Description / Value"
+F 5 "Any" H 7300 3800 50  0001 C CNN "Distributor"
+F 6 "TBD" H 7300 3800 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 7300 3800 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 7300 3800 50  0001 C CNN "Manufacturer Part #"
+F 9 "0805" H 7300 3800 50  0001 C CNN "Package / Footprint"
+F 10 "SMD" H 7300 3800 50  0001 C CNN "Type"
 	1    7300 3800
 	1    0    0    -1  
 $EndComp
@@ -649,18 +719,15 @@ F 0 "J2" H 6408 5731 50  0000 C CNN
 F 1 "IFACE PASS" H 6250 5650 50  0000 C CNN
 F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 6300 5350 50  0001 C CNN
 F 3 "~" H 6300 5350 50  0001 C CNN
+F 4 "CONN JST-XH-2.50MM VERTICAL MALE HEADER 5 PIN" H 6300 5350 50  0001 C CNN "Description / Value"
+F 5 "Any" H 6300 5350 50  0001 C CNN "Distributor"
+F 6 "TBD" H 6300 5350 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 6300 5350 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 6300 5350 50  0001 C CNN "Manufacturer Part #"
+F 9 "Through-Hole" H 6300 5350 50  0001 C CNN "Package / Footprint"
+F 10 "THT" H 6300 5350 50  0001 C CNN "Type"
+F 11 "" H 6300 5350 50  0001 C CNN "Notes"
 	1    6300 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 60D869C1
-P 6600 5650
-F 0 "#PWR012" H 6600 5400 50  0001 C CNN
-F 1 "GND" H 6605 5477 50  0000 C CNN
-F 2 "" H 6600 5650 50  0001 C CNN
-F 3 "" H 6600 5650 50  0001 C CNN
-	1    6600 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -695,8 +762,6 @@ Wire Wire Line
 	6850 5250 6850 5050
 Wire Wire Line
 	6500 5550 6600 5550
-Wire Wire Line
-	6600 5550 6600 5650
 Wire Notes Line
 	5950 6000 8950 6000
 Wire Notes Line
@@ -711,6 +776,13 @@ F 0 "FID1" H 8435 2296 50  0000 L CNN
 F 1 "Fiducial" H 8435 2205 50  0000 L CNN
 F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8350 2250 50  0001 C CNN
 F 3 "~" H 8350 2250 50  0001 C CNN
+F 4 "FIDUCIAL MARK" H 8350 2250 50  0001 C CNN "Description / Value"
+F 5 "N/A" H 8350 2250 50  0001 C CNN "Distributor"
+F 6 "N/A" H 8350 2250 50  0001 C CNN "Distributor part #"
+F 7 "N/A" H 8350 2250 50  0001 C CNN "Manufacturer"
+F 8 "N/A" H 8350 2250 50  0001 C CNN "Manufacturer Part #"
+F 9 "N/A" H 8350 2250 50  0001 C CNN "Package / Footprint"
+F 10 "N/A" H 8350 2250 50  0001 C CNN "Type"
 	1    8350 2250
 	1    0    0    -1  
 $EndComp
@@ -722,6 +794,13 @@ F 0 "FID2" H 8435 2546 50  0000 L CNN
 F 1 "Fiducial" H 8435 2455 50  0000 L CNN
 F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8350 2500 50  0001 C CNN
 F 3 "~" H 8350 2500 50  0001 C CNN
+F 4 "FIDUCIAL MARK" H 8350 2500 50  0001 C CNN "Description / Value"
+F 5 "N/A" H 8350 2500 50  0001 C CNN "Distributor"
+F 6 "N/A" H 8350 2500 50  0001 C CNN "Distributor part #"
+F 7 "N/A" H 8350 2500 50  0001 C CNN "Manufacturer"
+F 8 "N/A" H 8350 2500 50  0001 C CNN "Manufacturer Part #"
+F 9 "N/A" H 8350 2500 50  0001 C CNN "Package / Footprint"
+F 10 "N/A" H 8350 2500 50  0001 C CNN "Type"
 	1    8350 2500
 	1    0    0    -1  
 $EndComp
@@ -733,6 +812,13 @@ F 0 "FID3" H 8435 2796 50  0000 L CNN
 F 1 "Fiducial" H 8435 2705 50  0000 L CNN
 F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8350 2750 50  0001 C CNN
 F 3 "~" H 8350 2750 50  0001 C CNN
+F 4 "FIDUCIAL MARK" H 8350 2750 50  0001 C CNN "Description / Value"
+F 5 "N/A" H 8350 2750 50  0001 C CNN "Distributor"
+F 6 "N/A" H 8350 2750 50  0001 C CNN "Distributor part #"
+F 7 "N/A" H 8350 2750 50  0001 C CNN "Manufacturer"
+F 8 "N/A" H 8350 2750 50  0001 C CNN "Manufacturer Part #"
+F 9 "N/A" H 8350 2750 50  0001 C CNN "Package / Footprint"
+F 10 "N/A" H 8350 2750 50  0001 C CNN "Type"
 	1    8350 2750
 	1    0    0    -1  
 $EndComp
@@ -744,4 +830,99 @@ F1 "relay-mir.sch" 50
 F2 "TRIGGER" I L 3250 4200 50 
 F3 "VIOUT" O L 3250 4350 50 
 $EndSheet
+$Comp
+L Connector:Conn_01x05_Male J3
+U 1 1 60CC1B48
+P 7250 5350
+F 0 "J3" H 7358 5731 50  0000 C CNN
+F 1 "AUX ANALOG" H 7250 5650 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7250 5350 50  0001 C CNN
+F 3 "~" H 7250 5350 50  0001 C CNN
+F 4 "CONN JST-XH-2.50MM VERTICAL MALE HEADER 5 PIN" H 7250 5350 50  0001 C CNN "Description / Value"
+F 5 "Any" H 7250 5350 50  0001 C CNN "Distributor"
+F 6 "TBD" H 7250 5350 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 7250 5350 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 7250 5350 50  0001 C CNN "Manufacturer Part #"
+F 9 "Through-Hole" H 7250 5350 50  0001 C CNN "Package / Footprint"
+F 10 "THT" H 7250 5350 50  0001 C CNN "Type"
+F 11 "" H 7250 5350 50  0001 C CNN "Notes"
+	1    7250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 60CEC0A7
+P 7950 5350
+F 0 "J4" H 8058 5731 50  0000 C CNN
+F 1 "AUX DIGITAL" H 7950 5650 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7950 5350 50  0001 C CNN
+F 3 "~" H 7950 5350 50  0001 C CNN
+F 4 "CONN JST-XH PITCH-2.50MM VERTICAL MALE HEADER 5 PIN" H 7950 5350 50  0001 C CNN "Description / Value"
+F 5 "Any" H 7950 5350 50  0001 C CNN "Distributor"
+F 6 "TBD" H 7950 5350 50  0001 C CNN "Distributor part #"
+F 7 "TBD" H 7950 5350 50  0001 C CNN "Manufacturer"
+F 8 "TBD" H 7950 5350 50  0001 C CNN "Manufacturer Part #"
+F 9 "Through-Hole" H 7950 5350 50  0001 C CNN "Package / Footprint"
+F 10 "THT" H 7950 5350 50  0001 C CNN "Type"
+F 11 "" H 7950 5350 50  0001 C CNN "Notes"
+	1    7950 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5550 6600 5650
+$Comp
+L power:GND #PWR012
+U 1 1 60D869C1
+P 6600 5650
+F 0 "#PWR012" H 6600 5400 50  0001 C CNN
+F 1 "GND" H 6605 5477 50  0000 C CNN
+F 2 "" H 6600 5650 50  0001 C CNN
+F 3 "" H 6600 5650 50  0001 C CNN
+	1    6600 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60D02F4B
+P 7550 5650
+F 0 "#PWR0103" H 7550 5400 50  0001 C CNN
+F 1 "GND" H 7555 5477 50  0000 C CNN
+F 2 "" H 7550 5650 50  0001 C CNN
+F 3 "" H 7550 5650 50  0001 C CNN
+	1    7550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60D03594
+P 8250 5650
+F 0 "#PWR0104" H 8250 5400 50  0001 C CNN
+F 1 "GND" H 8255 5477 50  0000 C CNN
+F 2 "" H 8250 5650 50  0001 C CNN
+F 3 "" H 8250 5650 50  0001 C CNN
+	1    8250 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5550 8250 5550
+Wire Wire Line
+	8250 5550 8250 5650
+Wire Wire Line
+	7450 5550 7550 5550
+Wire Wire Line
+	7550 5550 7550 5650
+$Comp
+L power:+5V #PWR07
+U 1 1 60DA5585
+P 6150 1850
+F 0 "#PWR07" H 6150 1700 50  0001 C CNN
+F 1 "+5V" H 6165 2023 50  0000 C CNN
+F 2 "" H 6150 1850 50  0001 C CNN
+F 3 "" H 6150 1850 50  0001 C CNN
+	1    6150 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 2600
+Wire Wire Line
+	2500 2100 2500 2600
 $EndSCHEMATC

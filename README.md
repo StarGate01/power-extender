@@ -4,7 +4,7 @@ Hardware for a power and IO extension PCB with current monitoring.
 
 ## Usage
 
-Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com/StarGate01/KiCadLibs) to view and edit this project.
+Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com/StarGate01/KiCadLibs) to view and edit this project. Use [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
 
 
 ## State of the Project
