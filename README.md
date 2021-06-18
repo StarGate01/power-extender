@@ -20,7 +20,7 @@ Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com
 
 ## Images
 
-![3D Render](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1/render/https://github.com/StarGate01/power-extender)
+![3D Render](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1/render/power-extender-render-3d-rev1.png)
 
 ## Design
 
