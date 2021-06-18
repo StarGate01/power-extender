@@ -12,16 +12,15 @@ Use [KiCad](https://www.kicad.org/) and my [CustomComponents](https://github.com
  - [x] Lay out circuit
  - [x] Select components
  - [x] Lay out PCB
- - [ ] Export rev. 1 fabrication files
- - [ ] PCB fabrication and assembly in progress
+ - [x] Export rev. 1 fabrication files
+ - [x] PCB fabrication and assembly in progress
+ - [ ] PCBs received
  - [ ] Verification
 
 
 ## Images
 
-![3D Render](https://raw.githubusercontent.com/StarGate01/power-extender/master/images/rev0/render.png)
-
-![PCB layout](https://raw.githubusercontent.com/StarGate01/power-extender/master/images/rev0/layout.png)
+![3D Render](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1/render/https://github.com/StarGate01/power-extender)
 
 ## Design
 
