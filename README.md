@@ -17,8 +17,10 @@ Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.co
  - [x] PCB reviewed by fab
  - [x] BOM finalized
  - [x] Export rev. 1.1 (adapt to BOM)
- - [ ] PCB reviewed by fab
- - [ ] PBB and PCBA in production
+ - [x] PCB reviewed by fab
+ - [x] PCBs produced
+ - [x] PCBA confirmed
+ - [ ] PCBA completed
  - [ ] PCBs received
  - [ ] Testing and verification
  - [ ] (... More revisions if needed ...)
