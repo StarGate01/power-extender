@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "power-extender-arduino",
+			"path": "software/power-extender-arduino"
+		}
+	],
+	"settings": {}
+}

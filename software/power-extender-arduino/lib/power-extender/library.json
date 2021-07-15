@@ -1,0 +1,31 @@
+{
+    "name": "power-extender",
+    "version": "0.0.1",
+    "keywords": "power-extender, i2c",
+    "description": "Library for the power-extender relay and measuring board.",
+    "authors":
+    [
+        {
+            "name": "Christoph Honal",
+            "email": "christoph.honal@web.de",
+            "url": "https://chrz.de",
+            "maintainer": true
+        }
+    ],
+    "dependencies":
+    [
+       
+        
+    ],
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/StarGate01/power-extender.git"
+    },
+    "export": {
+        "include": [
+            "software/power-extender-arduino/lib/power-extender"
+        ]
+    },
+    "frameworks": "arduino"
+}
