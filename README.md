@@ -2,6 +2,8 @@
 
 Hardware and software for a power and IO extension PCB with current monitoring and I2C interface.
 
+This project was generously supported by [PCBWay](https://www.pcbway.com/). Read more about this project and also my review of the manufacturing on my blog: [Article will be added soon] .
+
 ## Usage
 
 Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit this project, or download the [fabrication files](https://github.com/StarGate01/power-extender/tree/master/fabrication). I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
@@ -20,8 +22,8 @@ Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.co
  - [x] PCB reviewed by fab
  - [x] PCBs produced
  - [x] PCBA confirmed
- - [ ] PCBA completed
- - [ ] PCBs received
+ - [x] PCBA completed
+ - [x] PCBs received
  - [ ] Testing and verification
  - [ ] (... More revisions if needed ...)
  - [ ] Update readme with final specs and BOM
