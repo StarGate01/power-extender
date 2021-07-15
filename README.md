@@ -2,7 +2,7 @@
 
 Hardware and software for a power and IO extension PCB with current monitoring and I2C interface.
 
-This project was generously supported by [PCBWay](https://www.pcbway.com/). Read more about this project and also my review of the manufacturing on my blog: [Article will be added soon] .
+This project has been generously supported by [PCBWay](https://www.pcbway.com/). Read more about this project and also my review of the manufacturing on my blog: [Article will be added soon] .
 
 ## Usage
 
