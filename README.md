@@ -2,7 +2,7 @@
 
 Hardware and software for a power and IO extension PCB with current monitoring and I2C interface.
 
-This project has been generously supported by [PCBWay](https://www.pcbway.com/). Read more about this project and also my review of the manufacturing on my blog: [Article will be added soon] .
+This project has been generously supported by [PCBWay](https://www.pcbway.com/). Read more about this project and also my review of the manufacturing on my blog: [Design And Assembly Of An I2C Relay PCB](https://chrz.de/2021/07/16/design-and-assembly-of-an-i2c-relay-pcb/)
 
 ![PCB](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1_1/delivery.jpg)
 
