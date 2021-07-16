@@ -10,7 +10,7 @@ This project has been generously supported by [PCBWay](https://www.pcbway.com/).
 
 Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit the hardware project, or download the [fabrication files](fabrication) for PCB and/or PCBA manufacturing. I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM. You can also download the complete [schematics as PDF](hardware/power-extender_schematics_rev1_1.pdf).
 
-See the [Arduino library documentation](software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender). Use [Visual Studio Code](https://code.visualstudio.com/) and the [PlatformIO](https://platformio.org/) plugin to edit the Arduino library and tests.
+See the [Arduino library documentation](https://github.com/StarGate01/power-extender/tree/master/software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender). Use [Visual Studio Code](https://code.visualstudio.com/) and the [PlatformIO](https://platformio.org/) plugin to edit the Arduino library and tests.
 
 ## Features and Specifications
 
@@ -42,7 +42,7 @@ See the [Arduino library documentation](software/power-extender-arduino/lib/powe
   - Configurable sample rate and gain amplifier
   - Max. `10mA` continuous input current
 
-For further specifications and ratings, all [datasheets](dataheets) can be found in this repository.
+For further specifications and ratings, all [datasheets](https://github.com/StarGate01/power-extender/tree/master/datasheets) can be found in this repository.
 
 ### Sensor Calibration
 
