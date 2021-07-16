@@ -2,138 +2,65 @@
 
 Hardware and software for a power and IO extension PCB with current monitoring and I2C interface.
 
+# Features and Specifications
+
+- Power input via `5V` and `3V3` pins
+  - Min. `250mA @ 5V` to actuate all four relays simultaneously
+  - Less than `30mA @ 5V` standby current
+  - `3V3` voltage level is only required for I2C level shifting if the I2C signal level is `3.3V` instead of `5V`
+- I2C bus for connection to a I2C master via JST header `RPI`
+  - I2C bus passthrough via JST header `PASS`
+  - Internal pullup resistors
+  - Level-shifting `3.3V - 5V` tolerant bus
+- Four `SRD-05VDC-SL-C` three-lead (`NC - COM - NO`) magnetic relays
+  - Each has a `CC6902SO-10A` inductive current measuring IC connected across `COM`
+  - Galvanically isolated driver circuit using an optocoupler
+  - Flyback diode protection
+  - Red status LED indicates `COM - NO` actuation
+  - `2oz` thick copper traces enable high currents
+  - Isolation milling reduces risk of shorting in damp environments
+  - Maximum power: `10A, 250VAC, 110VDC`
+  - Contact load rating: resistive `7A @ 28VDC`, `10A @ 125VAC`, `7A @ 240VAC`, inductive `3A @ 120VAC`, `3A @ 28VDC`
+- One `PCA9557` 8-channel GPIO port (I2C address: `0x18`), logic level `0V | 5V`
+  - GPIO channels `0Z` - `3` connected to JST header `DIGITAL`
+  - Relays are connected to GPIO channels `4` - `7`
+  - Maximum current (except channel `0Z`): `25mA` sink, `20mA` source per channel, max. total: `100mA` sink, `85mA` source
+  - Channel `0Z` is high-impedance and open-drain (see datasheet for details)
+- Two `ADS1115` 4-channel 16-bit ADC ports, voltage range `0V - 5V`
+  - All four pins of ADC 1 connected to current measuring ICs (I2C address: `0x48`)
+  - All four pins of ADC 2 connected to JST header `ANALOG` (I2C address: `0x49`)
+  - Configurable sample rate and gain amplifier
+  - Max. `10mA` continuous input current
+
+For further specifications and ratings, all datasheets can be found in this repository at `datasheets/`.
+
+### Sensor Calibration
+
+Due to the inherent nature of magnetic relays, the inductive current measuring ICs experience a measurement offset while the relays are energized. It is recommended to measure the actual load at a distance from the board, in order to obtain reference values. These reference values should then be used to compute an offset or function for each channel and amount of relays energized. 
+
+For no load (floating), the maximum absolute measurement offset was found to be about as follows.
+
+| Amount of relays energized | Offset at energized channel | Offset at disabled channel |
+| -------------------------- | --------------------------- | -------------------------- |
+| 0                          | `0.05A`                     | `0.05A`                    |
+| 1                          | `1A`                        | `0.7A`                     |
+| 2                          | `1.5A`                      | `1.3A`                     |
+| 3                          | `2A`                        | `1.8A`                     |
+| 4                          | `2.4A`                      | N / A                      |
+
+Please note that these offsets are dependent on load and environmental factors.
+
 ## Usage
 
-Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit this project, or download the [fabrication files](https://github.com/StarGate01/power-extender/tree/master/fabrication). I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
+Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit the hardware project, or download the [fabrication files](https://github.com/StarGate01/power-extender/tree/master/fabrication). I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
 
-
-<details>
-<summary>State of the project</summary>
-
- - [x] Lay out circuit
- - [x] Select components
- - [x] Lay out PCB
- - [x] Export rev. 1
- - [x] PCB reviewed by fab
- - [x] BOM finalized
- - [x] Export rev. 1.1 (adapt to BOM)
- - [x] PCB reviewed by fab
- - [x] PCBs produced
- - [x] PCBA confirmed
- - [ ] PCBA completed
- - [ ] PCBs received
- - [ ] Testing and verification
- - [ ] (... More revisions if needed ...)
- - [ ] Update readme with final specs and BOM
-
-</details>
+See the [Arduino library documentation](software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender).
 
 ## Images
 
 ![3D Render](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1/render/power-extender-render-3d-rev1.png)
 
-## Design
-
-<details>
-<summary>Goals</summary>
-
- - Serial interface for RPi
- - 4 Relays (3 active + 1 hot spare)
-   - Rated for min. 12V / 8A inductive loads (rotary pumps)
-   - Current monitoring
- - ca. 4 additional digital IO pins (TTL)
- - ca. 4 additional analog input pins
- - Operate in damp, cold and hot environments
-
-</details>
-
-<details>
-<summary>Board</summary>
-
-  - Dual layer with ground plane
-  - Large spacing for high power traces
-  - 2oz/ft copper weight to carry 10A in ~4mm traces
-  - Isolation milling to limit creepage 
-
-</details>
-
-<details>
-<summary>Interfacing</summary>
-
-  - JST connector for VDD, GND and I2C signals
-  - 4 aux digital IO pins and 4 aux ADC pins
-  - High power interface directly at relay outputs
-  - Arduino compatible pin headers for aux signals
-  - 5V circuit due to current draw and RPi limits
-  - Voltage level-shifter for I2C
-   
-</details>
-
-<details>
-<summary>Relay subsystem</summary>
-
-  - Min. 100W inductive DC load
-  - Flyback diode to limit switching inductive power surge
-  - Indicator LED with resistor
-  - Stage 1 optocoupler for galvanic isolation from high power noise
-  - Stage 2 NPN transistor to drive the relay coil from coupler output
-  - Heavy duty screw terminals for high power connections
-
-</details>
-
-<details>
-<summary>Power monitoring subsystem</summary>
-
-  - Hall loop of sensor connected across relay load
-  - Analog output connected to ADC
-  - Prevent high power induction into signal traces (?)
-  - Multi-channel ADC connected to I2C bus
- 
-</details>
-
-## Component selection
-
-<details>
-<summary>Constraints</summary>
-
-  - Price
-  - In stock at LCSC
-  - SMD preferred, assembly will be done at the fab
-
-</details>
-
-<details>
-<summary>Rationale</summary>
-
-  - Standalone I2C port extender: `PCA9557PW`
-  - Current measuring IC: `CC6902SO-10A`
-    - Max. current: 10A
-    - Signal level: 5V
-  - Standalone I2C ADCs: `ADS1115IDGSR`
-    - Voltage level: 5V
-  - Relays: `SRD-05VDC-SL-C`
-    - Coil sensitivity: 0.36W / 72 mA at 5V
-    - Optocoupler: `PC817X2CSP9F`
-      - Input: 1.2V, ca. 20 mA
-      - Transfer ratio: min. 50%
-    - NPN Transistor: `PMBT3904,215`
-      - Max. 0.2A output
-      - 1K base resistor to limit optocoupler current
-      - Gain ca. 100 for max. theoretical current of ca. 0.4A
-    - Flyback diode: `1N4007`
-      - SMA format
-    - Screw terminals: 5mm pitch
-  - Indicator LEDs: `17-21SURC/S530-A3/TR8`
-    - 200 Ohm resistor for 2V, ca. 15 mA
-    - Red, 0805 format
-  - Resistors and capacitors
-    - 0805 format
-  - Shifting MOSFETS: `BSS138`
-    - SOT-23 format
-</details>
-
-<details>
-<summary>Rev 1.1 BOM</summary>
+## Rev. 1.1 BOM
 
 |Item #|Designator                            |Quantity|Manufacturer          |Manufacturer Part #  |Description / Value                         |Distributor|Distributor part #|Package / Footprint|Type|Notes|
 |------|--------------------------------------|--------|----------------------|---------------------|--------------------------------------------|-----------|------------------|-------------------|----|-----|
@@ -155,4 +82,3 @@ Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.co
 |16    |U11, U21, U31, U41                    |4       |Sharp Microelectronics|PC817X2CSP9F         |IC OPTOCOUPLER SMD-4                        |LCSC       |C66405            |SMD-4              |SMD |     |
 |17    |U2                                    |1       |NXP Semicon           |PCA9557PW,118        |IC I2C 8 CH IO EXPANDER TSSOP-16            |LCSC       |C141380           |TSSOP-16           |SMD |     |
 
-</details>
