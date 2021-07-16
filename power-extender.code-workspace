@@ -8,5 +8,9 @@
 			"path": "software/power-extender-arduino"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"functional": "cpp"
+		}
+	}
 }

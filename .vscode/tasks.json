@@ -1,0 +1,16 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Generate Arduino library documentation",
+            "type": "shell",
+            "command": "doxygen && moxygen --html-anchors --language cpp --noindex --output README.md doc/xml",
+            "options": {
+                "cwd": "${workspaceFolder}/software/power-extender-arduino/lib/power-extender"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
