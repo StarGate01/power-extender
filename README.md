@@ -4,6 +4,16 @@ Hardware and software for a power and IO extension PCB with current monitoring a
 
 This project has been generously supported by [PCBWay](https://www.pcbway.com/). Read more about this project and also my review of the manufacturing on my blog: [Article will be added soon] .
 
+## Images
+
+![PCB](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1_1/delivery.jpg)
+
+## Usage
+
+Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit the hardware project, or download the [fabrication files](fabrication) for PCB and/or PCBA manufacturing. I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM. You can also download the complete [schematics as PDF](hardware/power-extender_schematics_rev1_1.pdf).
+
+See the [Arduino library documentation](software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender).
+
 # Features and Specifications
 
 - Power input via `5V` and `3V3` pins
@@ -52,15 +62,6 @@ For no load (floating), the maximum absolute measurement offset was found to be 
 
 Please note that these offsets are dependent on load and environmental factors.
 
-## Usage
-
-Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit the hardware project, or download the [fabrication files](fabrication) for PCB and/or PCBA manufacturing. I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM. You can also download the complete [schematics as PDF](hardware/power-extender_schematics_rev1_1.pdf).
-
-See the [Arduino library documentation](software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender).
-
-## Images
-
-![PCB](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1_1/delivery.jpg)
 
 ## Rev. 1.1 BOM
 
