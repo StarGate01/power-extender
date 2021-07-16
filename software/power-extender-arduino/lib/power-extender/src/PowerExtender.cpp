@@ -32,7 +32,7 @@ void PowerExtender::begin()
 
 void PowerExtender::pinMode(const PEPIN_D_IN pin, const uint8_t mode)
 {
-    if(pin > PEPIN_DIN_3 || pin < PEPIN_DIN_0) return; 
+    if(pin > PEPIN_DIN_3 || pin < PEPIN_DIN_0Z) return; 
 
     // Clear or set bit in cached pinmap
     if(mode == OUTPUT) _gpio_mode &= ~(0x01 << pin);
@@ -44,7 +44,7 @@ void PowerExtender::pinMode(const PEPIN_D_IN pin, const uint8_t mode)
 
 void PowerExtender::digitalWrite(const PEPIN_D_OUT pin, const uint8_t val)
 {
-    if(pin > PEPIN_DOUT_K4 || pin < PEPIN_DOUT_0) return; 
+    if(pin > PEPIN_DOUT_K4 || pin < PEPIN_DOUT_0Z) return; 
 
     // Clear or set bit in cached output map
     if(val == LOW) _gpio_out &= ~(0x01 << pin);
@@ -56,7 +56,7 @@ void PowerExtender::digitalWrite(const PEPIN_D_OUT pin, const uint8_t val)
 
 uint8_t PowerExtender::digitalRead(const PEPIN_D_IN pin)
 {
-    if(pin > PEPIN_DIN_3 || pin < PEPIN_DIN_0) return 0; 
+    if(pin > PEPIN_DIN_3 || pin < PEPIN_DIN_0Z) return 0; 
 
     // Read from input map
     uint8_t state = _readRegister(PERIPHERAL_GPIO_ADDRESS, PCA9557_REG_CONTROL_INPUT_PORT);
@@ -161,7 +161,10 @@ double PowerExtender::analogReadAsVoltage(const PEPIN_A pin)
 double PowerExtender::analogReadAsCurrent(const PEPIN_A pin)
 {
     // Assume 2.5V center point, +-10A range
-    return abs((analogReadAsVoltage(pin) - 2.5) * 4.0);
+    double current = (analogReadAsVoltage(pin) - 2.5) * 4.0;
+
+    // Current changes direction depending on relay wiring
+    return abs(current);
 }
 
 void PowerExtender::_reconfigureADC(const PEPORT_A port)

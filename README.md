@@ -36,7 +36,7 @@ For further specifications and ratings, all datasheets can be found in this repo
 
 ### Sensor Calibration
 
-Due to the inherent nature of magnetic relays, the inductive current measuring ICs experience a measurement offset while the relays are energized. It is recommended to measure the actual load at a distance from the board, in order to obtain reference values. These reference values should then be used to compute an offset or function for each channel and amount of relays energized. 
+Due to the inherent nature of magnetic relays, the inductive current measuring ICs and also the ADCs experience a measurement offset while the relays are energized. It is recommended to measure the actual load at a distance from the board, in order to obtain reference values. These reference values should then be used to compute an offset or function for each channel and amount of relays energized. 
 
 For no load (floating), the maximum absolute measurement offset was found to be about as follows.
 

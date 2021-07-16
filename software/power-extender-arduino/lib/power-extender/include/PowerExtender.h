@@ -27,7 +27,7 @@
  */
 enum PEPIN_D_OUT : uint8_t
 {
-    PEPIN_DOUT_0 = 0,
+    PEPIN_DOUT_0Z = 0,
     PEPIN_DOUT_1 = 1,
     PEPIN_DOUT_2 = 2,
     PEPIN_DOUT_3 = 3,
@@ -43,7 +43,7 @@ enum PEPIN_D_OUT : uint8_t
  */
 enum PEPIN_D_IN : uint8_t
 {
-    PEPIN_DIN_0 = 0,
+    PEPIN_DIN_0Z = 0,
     PEPIN_DIN_1 = 1,
     PEPIN_DIN_2 = 2,
     PEPIN_DIN_3 = 3
