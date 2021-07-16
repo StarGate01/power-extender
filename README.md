@@ -34,7 +34,7 @@ This project has been generously supported by [PCBWay](https://www.pcbway.com/).
   - Configurable sample rate and gain amplifier
   - Max. `10mA` continuous input current
 
-For further specifications and ratings, all datasheets can be found in this repository at `datasheets/`.
+For further specifications and ratings, all [datasheets](dataheets) can be found in this repository.
 
 ### Sensor Calibration
 
@@ -54,11 +54,13 @@ Please note that these offsets are dependent on load and environmental factors.
 
 ## Usage
 
-Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit the hardware project, or download the [fabrication files](https://github.com/StarGate01/power-extender/tree/master/fabrication). I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
+Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit the hardware project, or download the [fabrication files](fabrication). I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM.
 
 See the [Arduino library documentation](software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender).
 
 ## Images
+
+![PCB](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1_1/delivery.jpg)
 
 ![3D Render](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1/render/power-extender-render-3d-rev1.png)
 
