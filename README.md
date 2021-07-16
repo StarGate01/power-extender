@@ -4,17 +4,15 @@ Hardware and software for a power and IO extension PCB with current monitoring a
 
 This project has been generously supported by [PCBWay](https://www.pcbway.com/). Read more about this project and also my review of the manufacturing on my blog: [Article will be added soon] .
 
-## Images
-
 ![PCB](https://raw.githubusercontent.com/StarGate01/power-extender/master/fabrication/rev1_1/delivery.jpg)
 
 ## Usage
 
 Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.com/StarGate01/KiCadLibs) library to view and edit the hardware project, or download the [fabrication files](fabrication) for PCB and/or PCBA manufacturing. I used [KiBOM](https://github.com/SchrodingersGat/kibom) to generate the BOM. You can also download the complete [schematics as PDF](hardware/power-extender_schematics_rev1_1.pdf).
 
-See the [Arduino library documentation](software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender).
+See the [Arduino library documentation](software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender). Use [Visual Studio Code](https://code.visualstudio.com/) and the [PlatformIO](https://platformio.org/) plugin to edit the Arduino library and tests.
 
-# Features and Specifications
+## Features and Specifications
 
 - Power input via `5V` and `3V3` pins
   - Min. `250mA @ 5V` to actuate all four relays simultaneously
@@ -63,7 +61,11 @@ For no load (floating), the maximum absolute measurement offset was found to be 
 Please note that these offsets are dependent on load and environmental factors.
 
 
-## Rev. 1.1 BOM
+## PCB Details
+
+**17 unique** parts, **60 SMT** parts, **12 THT** parts on a double-sided `90mm x 71mm` PCB with `2oz` copper finish.
+
+Component cost per board: about `$25` at [LCSC](https://lcsc.com/) (Ignoring shipping, bulk discounts and changes in price over time).
 
 |Item #|Designator                            |Quantity|Manufacturer          |Manufacturer Part #  |Description / Value                         |Distributor|Distributor part #|Package / Footprint|Type|Notes|
 |------|--------------------------------------|--------|----------------------|---------------------|--------------------------------------------|-----------|------------------|-------------------|----|-----|
@@ -84,4 +86,3 @@ Please note that these offsets are dependent on load and environmental factors.
 |15    |U12, U22, U32, U42                    |4       |Cross Chip            |CC6902SO-10A         |IC CURRENT SENSOR 5V 10A SOP-8              |LCSC       |C350865           |SOP-8              |SMD |     |
 |16    |U11, U21, U31, U41                    |4       |Sharp Microelectronics|PC817X2CSP9F         |IC OPTOCOUPLER SMD-4                        |LCSC       |C66405            |SMD-4              |SMD |     |
 |17    |U2                                    |1       |NXP Semicon           |PCA9557PW,118        |IC I2C 8 CH IO EXPANDER TSSOP-16            |LCSC       |C141380           |TSSOP-16           |SMD |     |
-
