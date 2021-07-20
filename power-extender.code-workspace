@@ -6,6 +6,10 @@
 		{
 			"name": "power-extender-arduino",
 			"path": "software/power-extender-arduino"
+		},
+		{
+			"name": "power-extender-raspberrypi",
+			"path": "software/power-extender-raspberrypi"
 		}
 	],
 	"settings": {
