@@ -11,6 +11,15 @@
                 "cwd": "${workspaceFolder}/software/power-extender-arduino/lib/power-extender"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Generate Raspberry Pi library documentation",
+            "type": "shell",
+            "command": "doxygen && moxygen --html-anchors  --language cpp --noindex --output README.md doc/xml",
+            "options": {
+                "cwd": "${workspaceFolder}/software/power-extender-raspberrypi"
+            },
+            "problemMatcher": []
         }
     ]
 }

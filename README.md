@@ -12,6 +12,8 @@ Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.co
 
 See the [Arduino library documentation](https://github.com/StarGate01/power-extender/tree/master/software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender). Use [Visual Studio Code](https://code.visualstudio.com/) and the [PlatformIO](https://platformio.org/) plugin to edit the Arduino library and tests.
 
+Sew the [Raspberry Pi library documentation](https://github.com/StarGate01/power-extender/tree/master/software/power-extender-raspberrypi) for usage with the Raspberry Pi Python 3 `smbus` framework.
+
 ## Features and Specifications
 
 - Power input via `5V` and `3V3` pins
@@ -48,7 +50,7 @@ For further specifications and ratings, all [datasheets](https://github.com/Star
 
 Due to the inherent nature of magnetic relays, the inductive current measuring ICs and also the ADCs experience a measurement offset while the relays are energized. It is recommended to measure the actual load at a distance from the board, in order to obtain reference values. These reference values should then be used to compute an offset or function for each channel and amount of relays energized. 
 
-For no load (floating), the maximum absolute measurement offset was found to be about as follows.
+For no load (floating) using an Arduino Uno, the maximum absolute measurement offset was found to be about as follows.
 
 | Amount of relays energized | Offset at energized channel | Offset at disabled channel |
 | -------------------------- | --------------------------- | -------------------------- |
