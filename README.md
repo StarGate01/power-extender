@@ -12,7 +12,7 @@ Use [KiCad](https://www.kicad.org/) with my [CustomComponents](https://github.co
 
 See the [Arduino library documentation](https://github.com/StarGate01/power-extender/tree/master/software/power-extender-arduino/lib/power-extender) for usage with the Arduino framework. The library is also available on [PlatformIO](https://platformio.org/lib/show/12563/power-extender). Use [Visual Studio Code](https://code.visualstudio.com/) and the [PlatformIO](https://platformio.org/) plugin to edit the Arduino library and tests.
 
-Sew the [Raspberry Pi library documentation](https://github.com/StarGate01/power-extender/tree/master/software/power-extender-raspberrypi) for usage with the Raspberry Pi Python 3 `smbus` framework.
+See the [Raspberry Pi library documentation](https://github.com/StarGate01/power-extender/tree/master/software/power-extender-raspberrypi) for usage with the Raspberry Pi Python 3 `smbus` framework.
 
 ## Features and Specifications
 
