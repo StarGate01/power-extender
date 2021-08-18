@@ -67,7 +67,7 @@ Please note that these offsets are dependent on load and environmental factors.
 
 **17 unique** parts, **60 SMT** parts, **12 THT** parts on a double-sided `90mm x 71mm` PCB with `2oz` copper finish.
 
-Component cost per board: about `$25` at [LCSC](https://lcsc.com/) (Ignoring shipping, bulk discounts and changes in price over time).
+Component cost per board: about `$25` (Ignoring shipping, bulk discounts and changes in price over time).
 
 |Item #|Designator                            |Quantity|Manufacturer          |Manufacturer Part #  |Description / Value                         |Distributor|Distributor part #|Package / Footprint|Type|Notes|
 |------|--------------------------------------|--------|----------------------|---------------------|--------------------------------------------|-----------|------------------|-------------------|----|-----|
