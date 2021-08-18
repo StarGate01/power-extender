@@ -69,6 +69,9 @@ Please note that these offsets are dependent on load and environmental factors.
 
 Component cost per board: about `$25` (Ignoring shipping, bulk discounts and changes in price over time).
 
+<details>
+<summary>BOM</summary>
+
 |Item #|Designator                            |Quantity|Manufacturer          |Manufacturer Part #  |Description / Value                         |Distributor|Distributor part #|Package / Footprint|Type|Notes|
 |------|--------------------------------------|--------|----------------------|---------------------|--------------------------------------------|-----------|------------------|-------------------|----|-----|
 |1     |C11, C21, C31, C41                    |4       |Any                   |TBD                  |CAP CER 100PF MAX. 5% MIN. 10V 0805 SMD     |Any        |TBD               |SMD 0805           |SMD |     |
@@ -88,3 +91,5 @@ Component cost per board: about `$25` (Ignoring shipping, bulk discounts and cha
 |15    |U12, U22, U32, U42                    |4       |Cross Chip            |CC6902SO-10A         |IC CURRENT SENSOR 5V 10A SOP-8              |LCSC       |C350865           |SOP-8              |SMD |     |
 |16    |U11, U21, U31, U41                    |4       |Sharp Microelectronics|PC817X2CSP9F         |IC OPTOCOUPLER SMD-4                        |LCSC       |C66405            |SMD-4              |SMD |     |
 |17    |U2                                    |1       |NXP Semicon           |PCA9557PW,118        |IC I2C 8 CH IO EXPANDER TSSOP-16            |LCSC       |C141380           |TSSOP-16           |SMD |     |
+
+</details>
