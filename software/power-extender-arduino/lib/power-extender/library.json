@@ -1,6 +1,6 @@
 {
     "name": "power-extender",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "keywords": "power-extender, i2c, ads1115, pc9557",
     "description": "Library for the power-extender relay and measuring board containing two ADS1115 ADCs and one PC9557 GPIO.",
     "authors":

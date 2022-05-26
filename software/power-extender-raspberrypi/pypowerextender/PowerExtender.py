@@ -92,7 +92,7 @@ class PowerExtender:
     #
     # @param pin Which pin to configure
     # @param mode INPUT or OUTPUT
-    def pinMode(self, pin: PEPIN_D_IN, mode: PINMODE):
+    def setPinMode(self, pin: PEPIN_D_IN, mode: PINMODE):
         if(pin > PEPIN_D_IN.PEPIN_DIN_3 or pin < PEPIN_D_IN.PEPIN_DIN_0Z): return
 
         # Clear or set bit in cached pinmap

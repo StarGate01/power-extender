@@ -21,9 +21,9 @@ void setup()
 
     power_extender.begin();
 
-    power_extender.pinMode(PEPIN_DIN_1, INPUT);
-    power_extender.pinMode(PEPIN_DIN_2, INPUT);
-    power_extender.pinMode(PEPIN_DIN_3, OUTPUT);
+    power_extender.setPinMode(PEPIN_DIN_1, INPUT);
+    power_extender.setPinMode(PEPIN_DIN_2, INPUT);
+    power_extender.setPinMode(PEPIN_DIN_3, OUTPUT);
 }
 
 double k1 = 0, k2 = 0, k3 = 0, k4 = 0;

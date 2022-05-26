@@ -103,7 +103,7 @@ class PowerExtender
          * @param pin Which pin to configure
          * @param mode INPUT or OUTPUT
          */
-        void pinMode(const PEPIN_D_IN pin, const uint8_t mode);
+        void setPinMode(const PEPIN_D_IN pin, const uint8_t mode);
 
         /**
          * @brief Change the state of a GPIO output pin
@@ -156,8 +156,8 @@ class PowerExtender
     protected:
         const uint8_t _adc_address[2] = { PERIPHERAL_ADC_RELAY_ADDRESS, PERIPHERAL_ADC_AUX_ADDRESS }; //!< ADC address map
         uint8_t _gpio_out = 0x00, _gpio_mode = 0x00; //!< GPIO register chache
-        ADS1115_DR _data_rate[2] = { DR_64, DR_64 }; //!< Configured data rates
-        ADS1115_PGA _gain[2] = { PGA_6_144, PGA_6_144 }; //!< Configured gains
+        ADS1115_DR _data_rate[2] = { ADS1115_DR_64, ADS1115_DR_64 }; //!< Configured data rates
+        ADS1115_PGA _gain[2] = { ADS1115_PGA_6_144, ADS1115_PGA_6_144 }; //!< Configured gains
 
         /**
          * @brief Reinitializes a ADC

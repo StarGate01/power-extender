@@ -4,13 +4,13 @@
 
  Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
-`class `[`power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_PGA`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__PGA) | 
 `class `[`power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_DR`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__DR) | 
+`class `[`power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_PGA`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__PGA) | 
 
-# class `power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_PGA` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__PGA"></a>
+# class `power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_DR` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__DR"></a>
 
 ```
-class power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_PGA
+class power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_DR
   : public IntEnum
 ```  
 
@@ -21,10 +21,10 @@ class power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_PG
 
 ## Members
 
-# class `power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_DR` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__DR"></a>
+# class `power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_PGA` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__PGA"></a>
 
 ```
-class power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_DR
+class power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_PGA
   : public IntEnum
 ```  
 
@@ -41,22 +41,22 @@ class power-extender-raspberrypi::pypowerextender::ADS1115_Registers::ADS1115_DR
 
  Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
-`class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_OUT`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__OUT) | Existing GPIO pins for output.
-`class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_IN`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__IN) | Existing GPIO pins for input.
-`class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PEPORT_A`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPORT__A) | Existing analog ports (separate ADC ICs)
 `class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_A`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__A) | Existing analog pins.
+`class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_IN`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__IN) | Existing GPIO pins for input.
+`class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_OUT`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__OUT) | Existing GPIO pins for output.
+`class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PEPORT_A`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPORT__A) | Existing analog ports (separate ADC ICs)
 `class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PINMODE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINMODE) | Pinmode definitions.
 `class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PINSTATE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINSTATE) | Pinstate definitions.
 `class `[`power-extender-raspberrypi::pypowerextender::PowerExtender::PowerExtender`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender) | Class to interface the power-extender.
 
-# class `power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_OUT` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__OUT"></a>
+# class `power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_A` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__A"></a>
 
 ```
-class power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_OUT
+class power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_A
   : public IntEnum
 ```  
 
-Existing GPIO pins for output.
+Existing analog pins.
 
 ## Summary
 
@@ -81,14 +81,14 @@ Existing GPIO pins for input.
 
 ## Members
 
-# class `power-extender-raspberrypi::pypowerextender::PowerExtender::PEPORT_A` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPORT__A"></a>
+# class `power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_OUT` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__OUT"></a>
 
 ```
-class power-extender-raspberrypi::pypowerextender::PowerExtender::PEPORT_A
+class power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_D_OUT
   : public IntEnum
 ```  
 
-Existing analog ports (separate ADC ICs)
+Existing GPIO pins for output.
 
 ## Summary
 
@@ -97,14 +97,14 @@ Existing analog ports (separate ADC ICs)
 
 ## Members
 
-# class `power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_A` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__A"></a>
+# class `power-extender-raspberrypi::pypowerextender::PowerExtender::PEPORT_A` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPORT__A"></a>
 
 ```
-class power-extender-raspberrypi::pypowerextender::PowerExtender::PEPIN_A
+class power-extender-raspberrypi::pypowerextender::PowerExtender::PEPORT_A
   : public IntEnum
 ```  
 
-Existing analog pins.
+Existing analog ports (separate ADC ICs)
 
 ## Summary
 
@@ -155,7 +155,7 @@ Class to interface the power-extender.
 --------------------------------|---------------------------------------------
 `public def `[`__init__`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1ad7f74c05e4f81fff44294663b4eea909)`(self)` | Construct a new Power Extender object.
 `public def `[`begin`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a77635c29b3e975602f4de08570c5ab66)`(self,int bus)` | Begin I2C communication.
-`public def `[`pinMode`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a21fbe915dbd9f03edc7ce15196bf6f6d)`(self,`[`PEPIN_D_IN`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__IN)` pin,`[`PINMODE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINMODE)` mode)` | Configure the IO direction of a GPIO pin.
+`public def `[`setPinMode`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a28935d2fa3f4e8e0b9178cc93a20c7da)`(self,`[`PEPIN_D_IN`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__IN)` pin,`[`PINMODE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINMODE)` mode)` | Configure the IO direction of a GPIO pin.
 `public def `[`digitalWrite`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1ab420235d8b39cf3ac0c35061d8b65c75)`(self,`[`PEPIN_D_OUT`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__OUT)` pin,`[`PINSTATE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINSTATE)` val)` | Change the state of a GPIO output pin.
 `public `[`PINSTATE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINSTATE)` `[`digitalRead`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a331cdf53cb1d2a52321073b417b7b7f9)`(self,`[`PEPIN_D_IN`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__IN)` pin)` | Reads the state of a digital input pin.
 `public def `[`setAnalogDataRate`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1afaa7bde6af7c3c3387ab650a0db28946)`(self,`[`PEPORT_A`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPORT__A)` port,`[`ADS1115_Registers.ADS1115_DR`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1ADS1115__Registers_1_1ADS1115__DR)` data_rate)` | Set the data rate for a whole ADC.
@@ -173,7 +173,7 @@ Construct a new Power Extender object.
 
 Begin I2C communication.
 
-#### `public def `[`pinMode`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a21fbe915dbd9f03edc7ce15196bf6f6d)`(self,`[`PEPIN_D_IN`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__IN)` pin,`[`PINMODE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINMODE)` mode)` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a21fbe915dbd9f03edc7ce15196bf6f6d"></a>
+#### `public def `[`setPinMode`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a28935d2fa3f4e8e0b9178cc93a20c7da)`(self,`[`PEPIN_D_IN`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PEPIN__D__IN)` pin,`[`PINMODE`](#classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PINMODE)` mode)` <a id="classpower-extender-raspberrypi_1_1pypowerextender_1_1PowerExtender_1_1PowerExtender_1a28935d2fa3f4e8e0b9178cc93a20c7da"></a>
 
 Configure the IO direction of a GPIO pin.
 

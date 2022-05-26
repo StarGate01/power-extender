@@ -8,7 +8,7 @@ Class to interface the power-extender.
 --------------------------------|---------------------------------------------
 `public  `[`PowerExtender`](#classPowerExtender_1a80c1741a40c9457be1dd2f036e7edfc9)`()` | Construct a new Power Extender object.
 `public void `[`begin`](#classPowerExtender_1afd100c8d722c9ddca91f130b458966bd)`()` | Begin I2C communication.
-`public void `[`pinMode`](#classPowerExtender_1a7ff80f1f388c98f9bd98bc3932b7c612)`(const `[`PEPIN_D_IN`](#PowerExtender_8h_1a685519a6a58a2e8ad4f2ce6af2510799)` pin,const uint8_t mode)` | Configure the IO direction of a GPIO pin.
+`public void `[`setPinMode`](#classPowerExtender_1a646d016a4b9701847c3467cad0b139b7)`(const `[`PEPIN_D_IN`](#PowerExtender_8h_1a685519a6a58a2e8ad4f2ce6af2510799)` pin,const uint8_t mode)` | Configure the IO direction of a GPIO pin.
 `public void `[`digitalWrite`](#classPowerExtender_1a23b7ab524d28626d51db4e3f1762192b)`(const `[`PEPIN_D_OUT`](#PowerExtender_8h_1a07782b9be93fe6cb58069f9b1a771a30)` pin,const uint8_t val)` | Change the state of a GPIO output pin.
 `public uint8_t `[`digitalRead`](#classPowerExtender_1ab618f5536a2d8255eeb173ac5fab63b6)`(const `[`PEPIN_D_IN`](#PowerExtender_8h_1a685519a6a58a2e8ad4f2ce6af2510799)` pin)` | Reads the state of a digital input pin.
 `public void `[`setAnalogDataRate`](#classPowerExtender_1a32828af582b59d6ac0806719d10f4c5a)`(const `[`PEPORT_A`](#PowerExtender_8h_1ad485c9fc79e6f2c1769c0f37be04af7c)` port,const ADS1115_DR data_rate)` | Set the data rate for a whole ADC.
@@ -26,7 +26,7 @@ Construct a new Power Extender object.
 
 Begin I2C communication.
 
-#### `public void `[`pinMode`](#classPowerExtender_1a7ff80f1f388c98f9bd98bc3932b7c612)`(const `[`PEPIN_D_IN`](#PowerExtender_8h_1a685519a6a58a2e8ad4f2ce6af2510799)` pin,const uint8_t mode)` <a id="classPowerExtender_1a7ff80f1f388c98f9bd98bc3932b7c612"></a>
+#### `public void `[`setPinMode`](#classPowerExtender_1a646d016a4b9701847c3467cad0b139b7)`(const `[`PEPIN_D_IN`](#PowerExtender_8h_1a685519a6a58a2e8ad4f2ce6af2510799)` pin,const uint8_t mode)` <a id="classPowerExtender_1a646d016a4b9701847c3467cad0b139b7"></a>
 
 Configure the IO direction of a GPIO pin.
 

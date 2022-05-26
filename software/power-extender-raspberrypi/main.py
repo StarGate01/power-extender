@@ -19,9 +19,9 @@ power_extender = PowerExtender.PowerExtender()
 def setup():
     print("Hello!\n")
     power_extender.begin()
-    power_extender.pinMode(PowerExtender.PEPIN_D_IN.PEPIN_DIN_1, PowerExtender.PINMODE.INPUT)
-    power_extender.pinMode(PowerExtender.PEPIN_D_IN.PEPIN_DIN_2, PowerExtender.PINMODE.INPUT)
-    power_extender.pinMode(PowerExtender.PEPIN_D_IN.PEPIN_DIN_3, PowerExtender.PINMODE.OUTPUT)
+    power_extender.setPinMode(PowerExtender.PEPIN_D_IN.PEPIN_DIN_1, PowerExtender.PINMODE.INPUT)
+    power_extender.setPinMode(PowerExtender.PEPIN_D_IN.PEPIN_DIN_2, PowerExtender.PINMODE.INPUT)
+    power_extender.setPinMode(PowerExtender.PEPIN_D_IN.PEPIN_DIN_3, PowerExtender.PINMODE.OUTPUT)
     
 
 cnt = 0

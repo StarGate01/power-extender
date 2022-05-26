@@ -30,7 +30,7 @@ void PowerExtender::begin()
     _reconfigureADC(PEPORT_A1);
 }
 
-void PowerExtender::pinMode(const PEPIN_D_IN pin, const uint8_t mode)
+void PowerExtender::setPinMode(const PEPIN_D_IN pin, const uint8_t mode)
 {
     if(pin > PEPIN_DIN_3 || pin < PEPIN_DIN_0Z) return; 
 
@@ -136,22 +136,22 @@ double PowerExtender::analogReadAsVoltage(const PEPIN_A pin)
     double fs = 0.0;
     switch(_gain[port])
     {
-        case PGA_6_144:
+        case ADS1115_PGA_6_144:
             fs = 6.144;
             break;
-        case PGA_4_096:
+        case ADS1115_PGA_4_096:
             fs = 4.096;
             break;
-        case PGA_2_048:
+        case ADS1115_PGA_2_048:
             fs = 2.048;
             break;
-        case PGA_1_024:
+        case ADS1115_PGA_1_024:
             fs = 1.024;
             break;
-        case PGA_0_512:
+        case ADS1115_PGA_0_512:
             fs = 0.512;
             break;
-        case PGA_0_256:
+        case ADS1115_PGA_0_256:
             fs = 0.256;
             break;
     }
